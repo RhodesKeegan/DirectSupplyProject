@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import pandas as pd
 import requests
 
 class Scraper:
@@ -45,32 +46,44 @@ class Scraper:
         either in this method or some other method, and then that data will most likely need to be cleaned
         '''
 
-        found_words = {}
+
 
 
 
         key_words = ('filter', 'coil', 'fan', 'repair', 'maintenance')
-        link_example_one = self.found_links['Page 1'][3]
-        soup = BeautifulSoup(requests.get(link_example_one).text, 'html.parser')
+        count = 0
+        for link in self.found_links['Page 1']:
+            count += 1
+            found_words = {}
 
-        for key_word in key_words:
+            soup = BeautifulSoup(requests.get(link).text, 'html.parser')
 
-            h3 = soup.find_all('h3', text=lambda x: x and key_word in x.lower())
-            h2 = soup.find_all('h2', text=lambda x: x and key_word in x.lower())
-            p = soup.find_all('p', text=lambda x: x and key_word in x.lower())
-            div = soup.find_all('div', text=lambda x: x and key_word in x.lower())
-            h1 = soup.find_all('h1', text=lambda x: x and key_word in x.lower())
-            span = soup.find_all('span', text=lambda x: x and key_word in x.lower())
+            for key_word in key_words:
 
-            found_words['h3 ' + key_word] = h3
-            found_words['h2 ' + key_word] = h2
-            found_words['p ' + key_word] = p
-            found_words['div ' + key_word] = div
-            found_words['h1 ' + key_word] = h1
-            found_words['span ' + key_word] = span
+                h3 = soup.find_all('h3', text=lambda x: x and key_word in x.lower())
+                h2 = soup.find_all('h2', text=lambda x: x and key_word in x.lower())
+                p = soup.find_all('p', text=lambda x: x and key_word in x.lower())
+                div = soup.find_all('div', text=lambda x: x and key_word in x.lower())
+                h1 = soup.find_all('h1', text=lambda x: x and key_word in x.lower())
+                span = soup.find_all('span', text=lambda x: x and key_word in x.lower())
+                li = soup.find_all('li', text=lambda x: x and key_word in x.lower())
+
+                found_words['h3 ' + key_word] = h3
+                found_words['h2 ' + key_word] = h2
+                found_words['p ' + key_word] = p
+                found_words['div ' + key_word] = div
+                found_words['h1 ' + key_word] = h1
+                found_words['span ' + key_word] = span
+                found_words['li ' + key_word] = li
+
+            self.store_data(found_words, count)
 
 
-        # for element in elements:
-        #     print(element.find_next_sibling('p'))
+
+
+    def store_data(self, data, count):
+        df = pd.DataFrame.from_dict(data, orient='index')
+        df = df.transpose()
+        df.to_csv('link' + str(count) + '.csv')
 
 
