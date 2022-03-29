@@ -1,3 +1,6 @@
+import time
+from random import random, randrange
+
 from bs4 import BeautifulSoup
 import pandas as pd
 import requests
@@ -5,7 +8,6 @@ import requests
 class Scraper:
     def __init__(self, search_words, num_results):
         self.search_words = search_words
-        self.visited_links = []
         self.found_links = []
         self.num_results = num_results
 
@@ -48,34 +50,40 @@ class Scraper:
         '''
 
         key_words = ('filter', 'coil', 'fan', 'repair', 'maintenance')
-        count = 0
-        for link in self.found_links:
-            if link not in self.visited_links:
-                count += 1
-                found_words = {}
+        count = 54
 
-                soup = BeautifulSoup(requests.get(link).text, 'html.parser')
 
-                for key_word in key_words:
+        for link in self.found_links[55:]:
 
-                    h3 = soup.find_all('h3', text=lambda x: x and key_word in x.lower())
-                    h2 = soup.find_all('h2', text=lambda x: x and key_word in x.lower())
-                    p = soup.find_all('p', text=lambda x: x and key_word in x.lower())
-                    div = soup.find_all('div', text=lambda x: x and key_word in x.lower())
-                    h1 = soup.find_all('h1', text=lambda x: x and key_word in x.lower())
-                    span = soup.find_all('span', text=lambda x: x and key_word in x.lower())
-                    li = soup.find_all('li', text=lambda x: x and key_word in x.lower())
+            #if link not in self.visited_links:
+            count += 1
+            print("Working on link number " + str(count))
+            found_words = {}
 
-                    found_words['h3 ' + key_word] = map(lambda x: x.get_text(), h3)
-                    found_words['h2 ' + key_word] = map(lambda x: x.get_text(), h2)
-                    found_words['p ' + key_word] = map(lambda x: x.get_text(), p)
-                    found_words['div ' + key_word] = map(lambda x: x.get_text(), div)
-                    found_words['h1 ' + key_word] = map(lambda x: x.get_text(), h1)
-                    found_words['span ' + key_word] = map(lambda x: x.get_text(), span)
-                    found_words['li ' + key_word] = map(lambda x: x.get_text(), li)
+            soup = BeautifulSoup(requests.get(link).text, 'html.parser')
+            print("I am after the soup creation")
 
-                self.store_data(found_words, count)
-                self.visited_links.append(link)
+            time.sleep((random() + randrange(3)) * random()+6)
+
+            for key_word in key_words:
+
+                h3 = soup.find_all('h3', text=lambda x: x and key_word in x.lower())
+                h2 = soup.find_all('h2', text=lambda x: x and key_word in x.lower())
+                p = soup.find_all('p', text=lambda x: x and key_word in x.lower())
+                div = soup.find_all('div', text=lambda x: x and key_word in x.lower())
+                h1 = soup.find_all('h1', text=lambda x: x and key_word in x.lower())
+                span = soup.find_all('span', text=lambda x: x and key_word in x.lower())
+                li = soup.find_all('li', text=lambda x: x and key_word in x.lower())
+
+                found_words['h3 ' + key_word] = map(lambda x: x.get_text(), h3)
+                found_words['h2 ' + key_word] = map(lambda x: x.get_text(), h2)
+                found_words['p ' + key_word] = map(lambda x: x.get_text(), p)
+                found_words['div ' + key_word] = map(lambda x: x.get_text(), div)
+                found_words['h1 ' + key_word] = map(lambda x: x.get_text(), h1)
+                found_words['span ' + key_word] = map(lambda x: x.get_text(), span)
+                found_words['li ' + key_word] = map(lambda x: x.get_text(), li)
+
+            self.store_data(found_words, count)
 
 
 
