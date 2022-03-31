@@ -3,6 +3,8 @@ import PyPDF2, textract, nltk
 import re
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+import pandas as pd
+
 nltk.download('stopwords')
 nltk.download('punkt')
 
@@ -63,8 +65,7 @@ for num in range(len(locations)):
     if num != 0:
         string = string.split('.', 1)
         string = string[1]
-        import pdb; pdb.set_trace()
-        re.matc
+   
     else:
         string = string.split('CausesSolutions')
         string = string[1]
@@ -74,7 +75,6 @@ for num in range(len(locations)):
     loc_counter += 1
 
 
-import pandas as pd
 
 
 pd.DataFrame(cumulative).to_excel('output3.xlsx', header=False, index=False)
