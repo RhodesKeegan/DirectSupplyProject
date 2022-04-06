@@ -116,11 +116,12 @@ def delete_file(file_id):
 
 def main():
     # list_engines()
-    list_uploaded_files()
-    # upload_file("testfile-conspire.jsonl", "answers")
+    # upload_file("first-run-raw(long-deleted).jsonl", "answers")
+    # list_uploaded_files()
     # delete_file("file-aSnZRImz86mrSkyHceSjcabY")
     # ask_question("What shape is the earth?", "file-uzsuer3V5nD5OumtLuwGVfwg")
     # ask_question("Who rules the world?", "file-uzsuer3V5nD5OumtLuwGVfwg")
+    ask_question("What does PTAC stand for?", "file-aIg2j8DE38wMQKX3pxu2CJTU")
     pass
 
 

@@ -1,0 +1,8 @@
+This first document (first-run-raw.jsonl) is our first attempt at training the model.
+Lines 1-8 hold PDF document data
+Lines 9-57 hold web data.
+
+file id on OpenAI: "file-x7XM0huKhrCYBYvTOdO1UGZE"
+with long deleted: file-aIg2j8DE38wMQKX3pxu2CJTU
+    The original file had documents that were too long to parse as JSONL, so for these lines, we
+    cut them off after a certain point.
