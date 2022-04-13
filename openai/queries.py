@@ -1,5 +1,8 @@
 import os
 import openai
+import pandas as pd
+from openai.embeddings_utils import get_embedding, get_embeddings, cosine_similarity
+import matplotlib
 
 # response = openai.Completion.create(
 #     engine="text-davinci-002",
@@ -114,6 +117,23 @@ def delete_file(file_id):
         print(f"Successfully deleted file with id '{file_id}'")
 
 
+# Engines for embeddings most useful for text similarity
+# text-similarity-ada-001, text-similarity-babbage-001, text-similarity-curie-001, text-similarity-davinci-001
+def test_similarity():
+    sentences = [
+        "This is normal, if it makes a gurgling or whoosing noise that means it is working",
+        "The unit might not be installed securely and firmly. However, clicking, gurgling, and whooshing noises are normal during operation of the unit."
+    ]
+    embeddings = get_embeddings(sentences, engine="text-similarity-ada-001")
+    similarity = cosine_similarity(*embeddings)
+    for s, e in zip(sentences, embeddings):
+        print(f"Sentence: {s}")
+        print(f"Embedding: {e}")
+        print()
+    print(f"Cosine similarity: {similarity}")
+
+
+
 def main():
     # list_engines()
     # upload_file("first-run-raw(long-deleted).jsonl", "answers")
@@ -121,7 +141,9 @@ def main():
     # delete_file("file-aSnZRImz86mrSkyHceSjcabY")
     # ask_question("What shape is the earth?", "file-uzsuer3V5nD5OumtLuwGVfwg")
     # ask_question("Who rules the world?", "file-uzsuer3V5nD5OumtLuwGVfwg")
-    ask_question("What does PTAC stand for?", "file-aIg2j8DE38wMQKX3pxu2CJTU")
+    # ask_question("How often do I change my PTAC filter?", "file-aIg2j8DE38wMQKX3pxu2CJTU")
+    test_similarity()
+
     pass
 
 
