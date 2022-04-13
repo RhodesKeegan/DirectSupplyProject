@@ -3,10 +3,10 @@ import PyPDF2, textract, nltk
 import re
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-import pandas as pd
-
 nltk.download('stopwords')
 nltk.download('punkt')
+import pandas as pd
+import json
 
 pdfreader = PyPDF2.PdfFileReader("Owners Manual Sample.pdf")
 
@@ -65,7 +65,7 @@ for num in range(len(locations)):
     if num != 0:
         string = string.split('.', 1)
         string = string[1]
-   
+        
     else:
         string = string.split('CausesSolutions')
         string = string[1]
@@ -75,7 +75,28 @@ for num in range(len(locations)):
     loc_counter += 1
 
 
+# ------------------------------------------------------------ #
 
+# file path to write to
+jsonl_fp = "data.jsonl"
 
-pd.DataFrame(cumulative).to_excel('output3.xlsx', header=False, index=False)
+# question and answer pairs
+qa_list = [] 
+for line in cumulative:
+    qa_list.append((line, 'pdf1'))
+
+# the desired keys for the dictionary
+keys = ['text', 'metadata']
+
+# converting the list to a dictionary
+qa_dict = [dict(zip(keys, qa)) for qa in qa_list]
+
+# dumps each entry of the dictionary and adds a new line
+with open(jsonl_fp, 'w') as fp:
+    for qa in qa_dict:
+        json.dump(qa, fp)
+        fp.write('\n')
+
+# pd.DataFrame(cumulative).to_excel('output3.xlsx', header=False, index=False)
+
 
