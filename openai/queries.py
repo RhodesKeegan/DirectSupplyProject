@@ -136,13 +136,13 @@ def test_similarity():
 
 def main():
     # list_engines()
-    # upload_file("first-run-raw(long-deleted).jsonl", "answers")
+    # upload_file("first-textract-9pdf.jsonl", "answers")
     # list_uploaded_files()
     # delete_file("file-aSnZRImz86mrSkyHceSjcabY")
     # ask_question("What shape is the earth?", "file-uzsuer3V5nD5OumtLuwGVfwg")
     # ask_question("Who rules the world?", "file-uzsuer3V5nD5OumtLuwGVfwg")
     # ask_question("How often do I change my PTAC filter?", "file-aIg2j8DE38wMQKX3pxu2CJTU")
-    test_similarity()
+    # test_similarity()
 
     pass
 
