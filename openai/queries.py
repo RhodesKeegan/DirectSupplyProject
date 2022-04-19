@@ -40,16 +40,36 @@ def ask_question(question, file_id):
     :return:
     """
     # examples steer the tone and answer format of the model's answers
-    examples_context = "On average, vehicles are estimated to need an oil change every 3,000 miles or every six " \
-                       "months. This can vary based on your driving habits, your driving frequency, the age of your " \
-                       "vehicle, and the quality of the oil you use."
-    examples = [
-        ["What affects how often a vehicle's oil needs to be changed?",
-         "Oil change frequency depends on driving habits, driving frequency, vehicle age, and oil quality."],
-        ["How often should I change my car's oil?",
-         "You should change your oil filter every 3,000 miles or every six months."]]
 
-    response = openai.Answer.create(
+    # (old examples context commented out)
+    # examples_context = "On average, vehicles are estimated to need an oil change every 3,000 miles or every six " \
+    #                    "months. This can vary based on your driving habits, your driving frequency, the age of your "\
+    #                    "vehicle, and the quality of the oil you use."
+    # examples = [
+    #     ["What affects how often a vehicle's oil needs to be changed?",
+    #      "Oil change frequency depends on driving habits, driving frequency, vehicle age, and oil quality."],
+    #     ["How often should I change my car's oil?",
+    #      "You should change your oil filter every 3,000 miles or every six months."]]
+
+    examples_context = "This appliance is not intended for use by persons (including children) with " \
+                       "reduced physical, sensory or mental capabilities, or lack of experience and " \
+                       "knowledge, unless they have been given supervision or instruction concerning use of the " \
+                       "appliance by a person responsible for their safety. Children should be supervised to ensure " \
+                       "they do not play with the appliance. "
+    examples = [
+        [
+            "Who can operate the PTAC?",
+            "Persons (including children) with reduced physical, sensory, or mental capabilities, or lack of "
+            "experience and knowledge can operate the PTAC, provided they have been given supervision or instruction "
+            "by a person responsible for their safety."
+        ],
+        [
+            "Can children play with the PTAC?",
+            "Children should be supervised to ensure they do not play with the appliance."
+        ]
+    ]
+
+    http_response = openai.Answer.create(
         search_model="ada",  # ID of engine used for search (ada, babbage, curie, davinci)
         model="ada",  # ID of engine used for completion (ada, babbage, curie, davinci)
         question=question,
@@ -60,7 +80,7 @@ def ask_question(question, file_id):
         # max_tokens=5,  # maximum number of tokens in answer
         # stop=...
     )
-    print(response)
+    return http_response
 
 
 def upload_file(filename, purpose, custom_filename=None):
@@ -83,7 +103,10 @@ def upload_file(filename, purpose, custom_filename=None):
 
     uploaded_file_name = response["filename"]
     uploaded_file_id = response["id"]
-    print(f"Uploaded file '{uploaded_file_name}' with id '{uploaded_file_id}'")
+    if response["status"] == "uploaded":
+        print(f"Uploaded file '{uploaded_file_name}' with id '{uploaded_file_id}'")
+    else:
+        print(f"Error uploading file: {response['status_details']}")
 
 
 # List all available engines
@@ -133,17 +156,45 @@ def test_similarity():
     print(f"Cosine similarity: {similarity}")
 
 
+def get_answer(question, file_id):
+    http_response = ask_question(question, file_id)
+    answer = http_response["answers"][0]
+    print(question, "|", answer)
+    return answer
+
+
+# File IDs:
+# testfile-conspire.jsonl               file-uzsuer3V5nD5OumtLuwGVfwg
+# first-run-raw(long-deleted).jsonl     file-aIg2j8DE38wMQKX3pxu2CJTU
+#
+def ask_validation_set(file_id, model_description):
+    validation_file_path = "files/validation/qa_validation_set(2022-04-19).csv"
+    validation_output_file_path = "files/validation/qa_validation_set(2022-04-19)-model_output.csv"
+
+    df_validation = pd.read_csv(validation_file_path)
+
+    df_validation["model_output"] = df_validation["question"].apply(lambda q: get_answer(q, file_id))
+
+    df_validation["model"] = model_description
+
+    df_validation.to_csv(validation_output_file_path, index=False)
+
 
 def main():
     # list_engines()
-    # upload_file("first-textract-9pdf.jsonl", "answers")
+
+    # upload_file("second-textract-9pdf.jsonl", "answers")
+    # delete_file("file-OvvooTx1xEj8POFOdldud0FT")
     # list_uploaded_files()
-    # delete_file("file-aSnZRImz86mrSkyHceSjcabY")
-    # ask_question("What shape is the earth?", "file-uzsuer3V5nD5OumtLuwGVfwg")
-    # ask_question("Who rules the world?", "file-uzsuer3V5nD5OumtLuwGVfwg")
-    # ask_question("How often do I change my PTAC filter?", "file-aIg2j8DE38wMQKX3pxu2CJTU")
+
+    # print(ask_question("What shape is the earth?", "file-uzsuer3V5nD5OumtLuwGVfwg"))
+    # print(ask_question("Who rules the world?", "file-uzsuer3V5nD5OumtLuwGVfwg"))
+    # print(ask_question("How often do I change my PTAC filter?", "file-aIg2j8DE38wMQKX3pxu2CJTU"))
     # test_similarity()
 
+    # print(get_answer("How often should I change my PTAC filter?", "file-aIg2j8DE38wMQKX3pxu2CJTU"))
+
+    # ask_validation_set("file-aIg2j8DE38wMQKX3pxu2CJTU", "first-run-raw(long-deleted).jsonl")
     pass
 
 
