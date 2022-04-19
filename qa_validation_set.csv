@@ -1,0 +1,56 @@
+question,answer
+What does the mode button do?,"This button cycles through the different modes which include COOL, HEAT, and FAN"
+Why is the PTAC leaking fluid?,"There is most likely a crack in a pipe or the drain pan. This can be quickly fixed by using water sealant, but the best option is to replace the cracked pipe or pan"
+How often should I clean the air filter?,The air filter should be cleaned once every two weeks
+What does PTAC stand for?,PTAC stands for Packages Terminal Air Conditioner
+Why is the fan not working?,The fan motor may be faulty or there could be debris in the way restricting its movement
+Why is the PTAC so noisy?,The fan blades may be loose
+Why is there ice forming on my PTAC?,Ice can form due to a buildup of dirt and dust within the system
+When should should a PTAC be replaced?,You should change your PTAC unit every 10 years.
+Why is the PTAC overheating?,This can be caused by not enough refrigerant in the system or a kink in the refrigerant line
+Why is my PTAC not turning on?,"Make sure it is properly connected to a reliable power source. If so, use a multi-meter to test to the terminal strip for voltage"
+Why is the PTAC spitting out water?,The position might need to be adjusted. Make sure the PTAC is level
+Why is the PTAC not cooling the room to the desired temperature?,"Check to see that it has refrigerant. If so, the PTAC may need a new thermostat"
+Why is the PTAC not heating the room to the desired temperature?,The PTAC may need a new thermostat
+How can I make my PTAC more efficient?,Make sure the unit and air filters are clean
+How does the cooling work?,Cooling begins automatically when the room temperature is four degrees below the setpoint
+What is the maximum temperature that I can set?,The maximum temperature is eighty four degrees
+How do I change the temperature?,Press the plus or minus buttons to increase or decrease the temperature
+How do I switch between fahrenheit and celsius?,Press and hold both the plus and minus buttons to change between fahrenheit and celsius
+How do I change the fan speed?,Press the button labeled speed to change the speed of the fan
+What is the LC error code?,The LC error code indicates that the PTAC control panel is disabled and can only be controlled via the wall thermostat
+What is the FC error code?,The FC error code indicates that the PTAC control panel is disabled and can only be controlled via the front desk control
+What is the AS error code?,The AS error code indicates there is a room temperature sensor error
+What is the ES error code?,The ES error code indicates there is an evaporator temperature sensor error
+What is the CS error code?,The CS error code indicates there is a condenser temperature sensor error
+What is the OS error code?,The OS error code indicates there is an outside temperature sensor error
+What is the HS error code?,The HS error code indicates there is an exhaust temperature sensor error
+What is the LE error code?,The LE error code indicates there is a wall thermostat error
+What is the LO error code?,The LO error code indicates the room temperature is lower than thirty two degrees
+What is the FP error code?,The FP error code indicates the unit is in low temperature protection mode
+What is the HI error code?,The HI error code indicates the room temperature is higher than ninety nine degrees
+What should I do if I get an error code?,"Unplug the unit and plug it back in. If the error persists, look up the error code and how to fix it"
+How do I remove the front panel?,Pull out at the bottom to release it from the tabs and then lift up
+How do I test the power supply cord?,"Plug in the air conditioner, press the TEST button and then press the RESET button. The power supply cord should now be supplying electricity to the unit"
+What should I do if the power supply cord is damaged?,The power supply cord must be replaced
+What kind of refrigerant is used?,The PTAC unit uses R-410A refrigerant
+What is low temperature protection?,If the unit senses the room temperature to be below thirty two degrees then the fan motor will turn on and warm the room to forty degrees
+What is the recommended gauge for thermostat wire?,The recommended wire gauge is 18 to 20 gauge solid thermostat wire
+How do I clean the air filters?,"Pull up on the air filter to remove, vacuum off heavy soil, run water through the filter, and dry thoroughly"
+What should I do if an air filter is torn or damaged?,If the filter is damaged then it should be replaced immediately
+How often should I clean the vent filter?,You should clean the vent filter twice a year
+Who do I call to request a warranty?,To request a warranty you can call Directy Supply Equipment and Furnishings at 1-800-634-7328
+Why does the PTAC vibrate?,Make sure the PTAC is secured firmly to the wall
+How do I turn the PTAC off?,Press the red power button to turn the unit on or off
+What are the dimensions of the PTAC?,The dimensions of the PTAC are 42.0x16.0x23.9 inches
+What is the COOL mode?,This mode cools the room automatically when the room temperature is above the setpoint and stops when the room temperature is 4 degrees below the setpoint
+What is the HEAT mode?,This mode heats the room automatically to the setpoint temperature
+What is the FAN mode?,This mode uses only the fan without any heating or cooling
+What does the Constant Fan button do?,"While in cooling mode, press this button to turn the constant fan function on or off. This will continuously run the fan"
+How do I fix an AS error code?,"You should check the connection between the temperature sensor and the PCB. If that is fine, then measure the resistance of the sensor"
+How do I fix an E5 error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor"
+How do I fix a CS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor"
+How do I fix an OS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor"
+How do I fix a HS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor"
+How do I fix an E4 error code?,Check the signal wire between the display board and the main board
+How do I fix a LE error code?,Check if the wiring between the controller and dip switch board is correct
