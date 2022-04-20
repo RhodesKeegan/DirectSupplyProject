@@ -184,8 +184,8 @@ def ask_validation_set(file_id, model_description):
 def main():
     # list_engines()
 
-    # upload_file("textract-2022-04-20.jsonl", "answers")
-    # delete_file("file-zrhyNLuXxlzbRufG8ef5sgnb")
+    # upload_file("test3.jsonl", "answers")
+    # delete_file("file-18kp2y9Qezd7EVOBAG0HKqwU")
     list_uploaded_files()
 
     # print(ask_question("What shape is the earth?", "file-uzsuer3V5nD5OumtLuwGVfwg"))
