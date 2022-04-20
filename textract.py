@@ -6,8 +6,8 @@ import time
 import json
 
 qa_list = [] 
-aws_access_key_id="AKIARPSZVF5FDCOBWQUX"
-aws_secret_access_key= "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"
+aws_access_key_id=""
+aws_secret_access_key= ""
 
 # S3 Document Data
 s3BucketName = "mybucket22222223"
