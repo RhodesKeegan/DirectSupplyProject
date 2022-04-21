@@ -166,6 +166,7 @@ def get_answer(question, file_id):
 # File IDs:
 # testfile-conspire.jsonl               file-uzsuer3V5nD5OumtLuwGVfwg
 # first-run-raw(long-deleted).jsonl     file-aIg2j8DE38wMQKX3pxu2CJTU
+# textract-2022-04-20.jsonl             file-g8aRinmdh7jA03RXSq8KVH93
 #
 def ask_validation_set(file_id, model_description):
     validation_file_path = "files/validation/qa_validation_set(2022-04-19).csv"
@@ -183,16 +184,16 @@ def ask_validation_set(file_id, model_description):
 def main():
     # list_engines()
 
-    # upload_file("second-textract-9pdf.jsonl", "answers")
-    # delete_file("file-OvvooTx1xEj8POFOdldud0FT")
-    # list_uploaded_files()
+    # upload_file("test3.jsonl", "answers")
+    # delete_file("file-18kp2y9Qezd7EVOBAG0HKqwU")
+    list_uploaded_files()
 
     # print(ask_question("What shape is the earth?", "file-uzsuer3V5nD5OumtLuwGVfwg"))
     # print(ask_question("Who rules the world?", "file-uzsuer3V5nD5OumtLuwGVfwg"))
     # print(ask_question("How often do I change my PTAC filter?", "file-aIg2j8DE38wMQKX3pxu2CJTU"))
     # test_similarity()
 
-    # print(get_answer("How often should I change my PTAC filter?", "file-aIg2j8DE38wMQKX3pxu2CJTU"))
+    # print(get_answer("How often should I change my PTAC filter?", "file-g8aRinmdh7jA03RXSq8KVH93"))
 
     # ask_validation_set("file-aIg2j8DE38wMQKX3pxu2CJTU", "first-run-raw(long-deleted).jsonl")
     pass
