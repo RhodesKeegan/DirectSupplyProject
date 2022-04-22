@@ -5,7 +5,10 @@ class Banner extends React.Component {
 
   reportQuestion(e) {
     if (e.key === 'Enter') {
-      console.log('here');
+      let question = e.target.value; //DO STUFF HERE FOR ADDING ACTUAL RESPONSE
+
+      const responseArea = document.getElementById('responseArea');
+      responseArea.style.display = 'block';
     }
   }
 
@@ -15,18 +18,24 @@ class Banner extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/React.createElement("div", {
+    return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
       className: 'banner'
     }, /*#__PURE__*/React.createElement("h1", {
-      className: 'greeting'
-    }, /*#__PURE__*/React.createElement("b", null, "Hello, I'm Dr. AMPS")), /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("p", {
-      className: 'input'
+      className: 'greeting fade-in-greeting'
+    }, /*#__PURE__*/React.createElement("b", null, "Hello, I'm Dr. AMPS")), /*#__PURE__*/React.createElement("form", {
+      onSubmit: e => {
+        e.preventDefault();
+      }
+    }, /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("p", {
+      className: 'input fade-in-subtext'
     }, /*#__PURE__*/React.createElement("b", null, "Ask me about PTACs:")), /*#__PURE__*/React.createElement("input", {
       className: 'inputBox',
       type: 'text',
       name: 'name',
       onKeyDown: this.reportQuestion.bind(this)
-    }))));
+    }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
+      id: 'responseArea'
+    }, "Response Goes Here"))));
   }
 
 }

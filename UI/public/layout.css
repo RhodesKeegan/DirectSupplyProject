@@ -2,28 +2,33 @@ body{
     background-image: linear-gradient(to right, #434343, #000000);
 }
 
-.hidden{
+
+.greeting {
+
     opacity: 0;
-}
-
-.fade-in{
-    opacity: 1;
-
-}
-
-.greeting{
-
-    /*opacity: 0;*/
-    /*transition: 2s opacity;*/
 
     color: ghostwhite;
     font-family: Helvetica, serif;
     font-size: xxx-large;
-    text-shadow:
-            -2px -2px 0 #000,
-            2px -2px 0 #000,
-            -2px 2px 0 #000,
-            2px 2px 0 #000;
+    text-shadow: -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+.fade-in-greeting {
+     animation: fade 1.5s ease-in forwards;
+}
+
+.fade-in-subtext{
+    animation: fade 1.5s ease-in forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fade {
+    100% {
+        opacity: 1;
+    }
+
 }
 
 .banner{
@@ -33,6 +38,7 @@ body{
 }
 
 .input{
+    opacity: 0;
     font-family: Georgia, serif;
     font-size: larger;
     color: white;
@@ -46,3 +52,18 @@ body{
 .inputBox{
     width: 300px;
 }
+
+#responseArea{
+    font-family: Georgia, serif;
+    font-size: larger;
+    color: white;
+    text-shadow:
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #000;
+    display: none;
+    padding-top: 50px;
+}
+
+
