@@ -93,21 +93,21 @@ def print_validation_combination_similarities():
 
     mean_answer_similarity, mean_answer_distance = get_combination_similarity(answer)
     mean_output_similarity, mean_output_distance = get_combination_similarity(output)
-    print("Cosine similarity:")
+    print("Answers:")
     print(f"mean validation set answer combination cosine similarity:  {mean_answer_similarity}")
     print(f"mean validation set answer combination euclidean distance: {mean_answer_distance}")
 
-    print("\nEuclidean distance:")
+    print("\nOutputs:")
     print(f"mean validation set model output combination cosine similarity:  {mean_output_similarity}")
     print(f"mean validation set model output combination euclidean distance: {mean_output_distance}")
 
     # OUTPUT AFTER RUNNING THIS METHOD:
 
-    # Cosine similarity:
+    # Answers:
     # mean validation set answer combination cosine similarity:  0.7968718816358088
     # mean validation set answer combination euclidean distance: 0.63113144087798
     #
-    # Euclidean distance:
+    # Outputs:
     # mean validation set model output combination cosine similarity:  0.8154501507929353
     # mean validation set model output combination euclidean distance: 0.5997398235175616
 
@@ -115,7 +115,7 @@ def print_validation_combination_similarities():
 def main():
     # save_validation_similarities()
     # save_top5_similarities()
-    print_validation_combination_similarities()
+    # print_validation_combination_similarities()
     pass
 
 
