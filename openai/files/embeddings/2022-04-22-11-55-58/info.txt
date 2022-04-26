@@ -1,2 +1,3 @@
 This directory contains embeddings for the top 5 validation question answers given by each group member.
 These embeddings were obtained using OpenAI's Embeddings endpoint.
+cosine similarities

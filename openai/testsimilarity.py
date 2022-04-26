@@ -2,8 +2,9 @@ import numpy as np
 import pandas as pd
 import itertools
 
-# EMBEDDINGS_DIR = "files/embeddings/2022-04-20-09-45-41/"
-EMBEDDINGS_DIR = "files/embeddings/2022-04-22-11-55-58/"
+EMBEDDINGS_DIR_VALID = "files/embeddings/2022-04-20-09-45-41/"
+EMBEDDINGS_DIR_TOP_5 = "files/embeddings/2022-04-22-11-55-58/"
+
 VALIDATION_FILE_PATH = "files/validation/qa_validation_set(2022-04-19)-model_output.csv"
 TOP_5_FILE_PATH = "files/validation/top5validation_answers.csv"
 
@@ -25,23 +26,30 @@ def cosine_similarities(A, B):
     return cos_similarities
 
 
+# calculates euclidean distances row-wise between matrices
+def euclidean_distances(A, B):
+    return np.linalg.norm(A - B, axis=1)
+
+
 def save_validation_similarities():
-    answer = np.load(EMBEDDINGS_DIR + "answer.npy")
-    output = np.load(EMBEDDINGS_DIR + "output.npy")
+    answer = np.load(EMBEDDINGS_DIR_VALID + "answer.npy")
+    output = np.load(EMBEDDINGS_DIR_VALID + "output.npy")
 
     similarities = cosine_similarities(answer, output)
+    distances = euclidean_distances(answer, output)
 
     df_validation = load_validation_file()
     df_validation["cosine_similarities"] = similarities
-    df_validation.to_csv(EMBEDDINGS_DIR + "model_output_with_scores.csv", index=False)
+    df_validation["euclidean_distances"] = distances
+    df_validation.to_csv(EMBEDDINGS_DIR_VALID + "model_output_with_scores.csv", index=False)
 
 
 def save_top5_similarities():
-    true = np.load(EMBEDDINGS_DIR + "top5_answer.npy")
-    p1 = np.load(EMBEDDINGS_DIR + "top5_person_1.npy")
-    p2 = np.load(EMBEDDINGS_DIR + "top5_person_2.npy")
-    p3 = np.load(EMBEDDINGS_DIR + "top5_person_3.npy")
-    p4 = np.load(EMBEDDINGS_DIR + "top5_person_4.npy")
+    true = np.load(EMBEDDINGS_DIR_TOP_5 + "top5_answer.npy")
+    p1 = np.load(EMBEDDINGS_DIR_TOP_5 + "top5_person_1.npy")
+    p2 = np.load(EMBEDDINGS_DIR_TOP_5 + "top5_person_2.npy")
+    p3 = np.load(EMBEDDINGS_DIR_TOP_5 + "top5_person_3.npy")
+    p4 = np.load(EMBEDDINGS_DIR_TOP_5 + "top5_person_4.npy")
 
     # TODO get average similarities rowwise
     all_similarities = []
@@ -53,11 +61,11 @@ def save_top5_similarities():
 
     df_top5 = pd.read_csv(TOP_5_FILE_PATH)
     df_top5["mean_similarity"] = mean_similarities
-    df_top5.to_csv(EMBEDDINGS_DIR + "similarities.csv", index=False)
+    df_top5.to_csv(EMBEDDINGS_DIR_TOP_5 + "similarities.csv", index=False)
 
 
 def main():
-    # save_validation_similarities()
+    save_validation_similarities()
     # save_top5_similarities()
     pass
 

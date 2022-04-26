@@ -1,2 +1,4 @@
 This directory contains validation answer embeddings and model output embeddings for the minimum viable model.
 These embeddings were obtained using OpenAI's Embeddings endpoint.
+cosine similarities
+euclidean distances
