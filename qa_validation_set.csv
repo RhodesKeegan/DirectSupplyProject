@@ -57,12 +57,12 @@ How do I fix a LE error code?,Check if the wiring between the controller and dip
 How do I access the dip switches?,Make sure the unit is powered off and then remove the front panel. The dip switches are located in the bottom right hand corner of the unit.
 What does the S1 dip switch do?,If the S1 switch is up then only electric heat is on. If the S1 switch is down then the electric heat and pump heat are on.
 What does the S2 dip switch do?,If the S2 switch is in the up position the temperature display is in Celsius. If the S2 switch is in the down position the temperature display is in Fahrenheit.
-What does the S3 dip switch do?,If the S3 switch is in the UP position, the wall thermostat is enabled. If the S3 switch is in the DOWN position, the control panel is enabled.
+What does the S3 dip switch do?,"If the S3 switch is in the UP position, the wall thermostat is enabled. If the S3 switch is in the DOWN position, the control panel is enabled."
 What does the S4 dip switch do?,The S4 and S5 switches are used together to select the temperature set point range.
 What does the S5 dip switch do?,The S4 and S5 switches are used together to select the temperature set point range.
-What does the S6 dip switch do?,If the S6 switch is in the UP position, the fan is set to continuously run for heating. If the S6 switch is set in the DOWN position, the fan is set to cycle for heating.
-What does the S7 dip switch do?,If the S7 switch is in the UP position, the fan is set to continuously run for cooling. If the S7 switch is set in the DOWN position, the fan is set to cycle for cooling.
-What does the S8 dip switch do?,If the S8 switch is in the UP position, low temperature protection mode is enabled. If the S8 switch is set in the DOWN position, low temperature protection mode is disabled.
-What does the S9 dip switch do?,If the S9 dip switch is in the UP position, it is set to use the wall thermostat. If the S9 dip switch is in the DOWN position, it is set to use the PTAC's thermostat.
-What dos the S11 dip switch do?,If the S11 dip switch is in the UP position, there is a load delay of 3 seconds. If the S11 dip switch is in the down position, it is set to normal.
-What should I use to clean the PTAC?,Use a soft cloth and do not use harsh detergents, solvents, etc.
+What does the S6 dip switch do?,"If the S6 switch is in the UP position, the fan is set to continuously run for heating. If the S6 switch is set in the DOWN position, the fan is set to cycle for heating."
+What does the S7 dip switch do?,"If the S7 switch is in the UP position, the fan is set to continuously run for cooling. If the S7 switch is set in the DOWN position, the fan is set to cycle for cooling."
+What does the S8 dip switch do?,"If the S8 switch is in the UP position, low temperature protection mode is enabled. If the S8 switch is set in the DOWN position, low temperature protection mode is disabled."
+What does the S9 dip switch do?,"If the S9 dip switch is in the UP position, it is set to use the wall thermostat. If the S9 dip switch is in the DOWN position, it is set to use the PTAC's thermostat."
+What dos the S11 dip switch do?,"If the S11 dip switch is in the UP position, there is a load delay of 3 seconds. If the S11 dip switch is in the down position, it is set to normal."
+What should I use to clean the PTAC?,"Use a soft cloth and do not use harsh detergents, solvents, etc."
