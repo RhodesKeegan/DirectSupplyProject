@@ -1,11 +1,11 @@
 question,answer
 What does the mode button do?,"This button cycles through the different modes which include COOL, HEAT, and FAN"
-Why is the PTAC leaking fluid?,"There is most likely a crack in a pipe or the drain pan. This can be quickly fixed by using water sealant, but the best option is to replace the cracked pipe or pan"
+Why is the PTAC leaking water?,"If a drain kit has not been installed, condensation runoff during hot and humid weather is normal. If a drain kit has been installed and is connected to a drain system, check gaskets and fittings around drain for leaks and plugs."
 How often should I clean the air filter?,The air filter should be cleaned once every two weeks
-What does PTAC stand for?,PTAC stands for Packages Terminal Air Conditioner
+What does PTAC stand for?,PTAC stands for Packaged Terminal Air Conditioner
 Why is the fan not working?,The fan motor may be faulty or there could be debris in the way restricting its movement
-Why is the PTAC so noisy?,The fan blades may be loose
-Why is there ice forming on my PTAC?,Ice can form due to a buildup of dirt and dust within the system
+Why is the PTAC making noise?,"Clicking, gurgling, and whooshing noises are normal during operation of unit."
+Why is there ice forming on my PTAC?,"When outdoor temperature is approximately 55 degrees Fahrenheit or below, frost may form on the indoor coil when unit is in cooling mode. Switch unit to FAN operation until ice or frost melts."
 When should should a PTAC be replaced?,You should change your PTAC unit every 10 years.
 Why is the PTAC overheating?,This can be caused by not enough refrigerant in the system or a kink in the refrigerant line
 Why is my PTAC not turning on?,"Make sure it is properly connected to a reliable power source. If so, use a multi-meter to test to the terminal strip for voltage"
@@ -65,4 +65,4 @@ What does the S7 dip switch do?,"If the S7 switch is in the UP position, the fan
 What does the S8 dip switch do?,"If the S8 switch is in the UP position, low temperature protection mode is enabled. If the S8 switch is set in the DOWN position, low temperature protection mode is disabled."
 What does the S9 dip switch do?,"If the S9 dip switch is in the UP position, it is set to use the wall thermostat. If the S9 dip switch is in the DOWN position, it is set to use the PTAC's thermostat."
 What dos the S11 dip switch do?,"If the S11 dip switch is in the UP position, there is a load delay of 3 seconds. If the S11 dip switch is in the down position, it is set to normal."
-What should I use to clean the PTAC?,"Use a soft cloth and do not use harsh detergents, solvents, etc."
+What should I use to clean the PTAC?,"To clean, use water and a mild detergent"
