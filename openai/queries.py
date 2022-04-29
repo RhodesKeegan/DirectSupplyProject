@@ -164,10 +164,11 @@ def get_answer(question, file_id):
 
 
 # File IDs:
-# testfile-conspire.jsonl               file-uzsuer3V5nD5OumtLuwGVfwg
-# first-run-raw(long-deleted).jsonl     file-aIg2j8DE38wMQKX3pxu2CJTU
-# textract-2022-04-20.jsonl             file-g8aRinmdh7jA03RXSq8KVH93
-#
+# testfile-conspire.jsonl                       file-uzsuer3V5nD5OumtLuwGVfwg
+# first-run-raw(long-deleted).jsonl             file-aIg2j8DE38wMQKX3pxu2CJTU
+# textract-2022-04-20.jsonl                     file-g8aRinmdh7jA03RXSq8KVH93
+# webscraped_AND_textract-2022-04-20.jsonl      file-6ucL1y3k6O4Qhm79ZtXhJLw6
+# webscraped-raw.jsonl                          file-7b3suQAG37bwTCtA8OAFZuUg
 def ask_validation_set(file_id, model_description):
     validation_file_path = "files/validation/qa_validation_set(2022-04-19).csv"
     validation_output_file_path = "files/validation/qa_validation_set(2022-04-19)-model_output.csv"
@@ -184,7 +185,7 @@ def ask_validation_set(file_id, model_description):
 def main():
     # list_engines()
 
-    # upload_file("test3.jsonl", "answers")
+    # upload_file("webscraped-raw.jsonl", "answers")
     # delete_file("file-18kp2y9Qezd7EVOBAG0HKqwU")
     list_uploaded_files()
 

@@ -1,0 +1,3 @@
+This file contains both textract PDF scraped data and web scraped data.
+Lines 1-9 contain PDF scraped data - the contents of textract-2022-04-20.jsonl
+Lines 10-58 contain web scraped data - the web data found in first-run-raw(long-deleted).jsonl
