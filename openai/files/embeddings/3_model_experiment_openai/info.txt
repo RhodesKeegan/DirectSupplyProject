@@ -1,0 +1,9 @@
+This directory contains OpenAI's Embeddings (using Davinci engine) for the 3 model experiment.
+One model uses just PDFs, one uses just web data, and one uses both.
+
+see:
+    textract-2022-04-20.jsonl.info
+    webscraped-raw.jsonl.info
+    webscraped_AND_textract-2022-04-20.jsonl.info
+
+Model used ada for search and davinci for responses

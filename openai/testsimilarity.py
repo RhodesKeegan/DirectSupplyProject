@@ -112,10 +112,48 @@ def print_validation_combination_similarities():
     # mean validation set model output combination euclidean distance: 0.5997398235175616
 
 
+def save_3_model_experiment_similarities():
+    df_val = pd.read_csv("files/validation/qa_validation_set(2022-04-29).csv")
+    df_pdf = pd.read_csv("files/validation/qa_validation_set(2022-04-29)-model_output-textract_only-CLEANED.csv")
+    df_web = pd.read_csv("files/validation/qa_validation_set(2022-04-29)-model_output-webscraped_only-CLEANED.csv")
+    df_both = pd.read_csv("files/validation/qa_validation_set(2022-04-29)-model_output-webscraped_AND_textract-CLEANED.csv")
+
+    true_answers = np.load("files/embeddings/3_model_experiment_openai/answer.npy")
+    pdf_output = np.load("files/embeddings/3_model_experiment_openai/output-textract.npy")
+    web_output = np.load("files/embeddings/3_model_experiment_openai/output-web.npy")
+    both_output = np.load("files/embeddings/3_model_experiment_openai/output-both.npy")
+
+    pdf_similarities = cosine_similarities(true_answers, pdf_output)
+    pdf_distances = euclidean_distances(true_answers, pdf_output)
+
+    web_similarities = cosine_similarities(true_answers, web_output)
+    web_distances = euclidean_distances(true_answers, web_output)
+
+    both_similarities = cosine_similarities(true_answers, both_output)
+    both_distances = euclidean_distances(true_answers, both_output)
+
+    df_all = df_val.copy()
+
+    df_all["pdf_output"] = df_pdf["model_output"]
+    df_all["pdf_similarity"] = pdf_similarities
+    df_all["pdf_distance"] = pdf_distances
+
+    df_all["web_output"] = df_web["model_output"]
+    df_all["web_similarity"] = web_similarities
+    df_all["web_distance"] = web_distances
+
+    df_all["both_output"] = df_both["model_output"]
+    df_all["both_similarity"] = both_similarities
+    df_all["both_distance"] = both_distances
+
+    df_all.to_csv("files/embeddings/3_model_experiment_openai/results.csv", index=False)
+
+
 def main():
     # save_validation_similarities()
     # save_top5_similarities()
     # print_validation_combination_similarities()
+    # save_3_model_experiment_similarities()
     pass
 
 
