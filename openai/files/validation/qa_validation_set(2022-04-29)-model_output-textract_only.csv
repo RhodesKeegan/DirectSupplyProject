@@ -1,0 +1,126 @@
+question,answer,model_output,model
+What does the mode button do?,"This button cycles through the different modes which include COOL, HEAT, and FAN","The mode button allows the user to select the desired mode of operation.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why is the PTAC leaking water?,"If a drain kit has not been installed, condensation runoff during hot and humid weather is normal. If a drain kit has been installed and is connected to a drain system, check gaskets and fittings around drain for leaks and plugs.","The PTAC is designed to be leak-free. If the PTAC is leaking water, it is most likely due to a clogged drain line.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How often should I clean the air filter?,The air filter should be cleaned once every two weeks,"The air filter should be cleaned once every two weeks.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does PTAC stand for?,PTAC stands for Packaged Terminal Air Conditioner,"PTAC stands for ""Programmable Thermostat Accessory"".
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why is the fan not working?,The fan motor may be faulty or there could be debris in the way restricting its movement,"The fan is not working because the unit is not in heating mode.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why is the PTAC making noise?,"Clicking, gurgling, and whooshing noises are normal during operation of unit.","The PTAC is designed to make noise when it is heating or cooling. This is normal.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why is there ice forming on my PTAC?,"When outdoor temperature is approximately 55 degrees Fahrenheit or below, frost may form on the indoor coil when unit is in cooling mode. Switch unit to FAN operation until ice or frost melts.","The PTAC is designed to operate in a wide range of temperatures. When the outdoor temperature is approximately 55°F or below, frost may form on the indoor coil. This is normal and does not indicate a problem with the unit.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+When should should a PTAC be replaced?,You should change your PTAC unit every 10 years.,"The PTAC should be replaced when the compressor fails or the unit is no longer under warranty.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why is the PTAC overheating?,This can be caused by not enough refrigerant in the system or a kink in the refrigerant line,"The PTAC is designed to operate within a temperature range of 40°F to 120°F (4.4°C to 49.5°C). If the PTAC is overheating, the unit will automatically shut down.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why is my PTAC not turning on?,"Make sure it is properly connected to a reliable power source. If so, use a multi-meter to test to the terminal strip for voltage","The PTAC may not turn on if the thermostat is not wired correctly.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why is the PTAC spitting out water?,The position might need to be adjusted. Make sure the PTAC is level,"The PTAC is designed to operate in a humid environment. If the PTAC is installed in a dry environment, the PTAC will spit out water.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why is the PTAC not cooling the room to the desired temperature?,"Check to see that it has refrigerant. If so, the PTAC may need a new thermostat","The PTAC is designed to cool the room to the setpoint temperature. If the room temperature is too high, the compressor will be turned off and the electric heat will be turned on. If the room temperature is too low, the compressor will be",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why is the PTAC not heating the room to the desired temperature?,The PTAC may need a new thermostat,"The PTAC is designed to heat the room to the desired temperature. If the room temperature is too low, the PTAC will turn on the electric strip heat to warm the room to the desired temperature. If the room temperature is too high, the",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How can I make my PTAC more efficient?,Make sure the unit and air filters are clean,"The PTAC has many features that can be used to make the unit more efficient. The user must be familiar with these features in order to properly service the unit.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How does the cooling work?,Cooling begins automatically when the room temperature is four degrees below the setpoint,The cooling system is a heat pump. The heat pump is a device that uses the refrigerant to transfer heat from the indoor air to the outdoor air. The refrigerant is a gas that is pumped through the system. The refrigerant is a liquid,textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the maximum temperature that I can set?,The maximum temperature is eighty four degrees,"The maximum temperature that can be set is 84°F/29°C.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I change the temperature?,Press the plus or minus buttons to increase or decrease the temperature,"Press the UP or DOWN button to change the temperature.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I switch between fahrenheit and celsius?,Press and hold both the plus and minus buttons to change between fahrenheit and celsius,"The PTAC control panel has a switch that allows you to select between the two scales.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I change the fan speed?,Press the button labeled speed to change the speed of the fan,"Press the FAN button to cycle through the fan speeds.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the LC error code?,The LC error code indicates that the PTAC control panel is disabled and can only be controlled via the wall thermostat,"The LC error code is a code that indicates a problem with the control board.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the FC error code?,The FC error code indicates that the PTAC control panel is disabled and can only be controlled via the front desk control,"The FC error code is a code that indicates a problem with the evaporator coil.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the AS error code?,The AS error code indicates there is a room temperature sensor error,"The AS error code is a code that indicates that the room temperature sensor is not functioning properly.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the ES error code?,The ES error code indicates there is an evaporator temperature sensor error,"The ES error code indicates that the evaporator temperature sensor is not functioning properly.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the CS error code?,The CS error code indicates there is a condenser temperature sensor error,"The CS error code indicates that the room temperature sensor is not functioning properly.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the OS error code?,The OS error code indicates there is an outside temperature sensor error,"The OS error code is a code that indicates a problem with the unit. The error code is displayed on the control panel.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the HS error code?,The HS error code indicates there is an exhaust temperature sensor error,"HS error code is a code that indicates that the unit is not operating properly.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the LE error code?,The LE error code indicates there is a wall thermostat error,"The LE error code is a code that indicates that the unit is not receiving a signal from the room temperature sensor.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the LO error code?,The LO error code indicates the room temperature is lower than thirty two degrees,"The LO error code indicates that the room temperature is lower than 32°F/0°C.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the FP error code?,The FP error code indicates the unit is in low temperature protection mode,"The FP error code is a code that indicates that the unit is not receiving a signal from the room temperature sensor.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the HI error code?,The HI error code indicates the room temperature is higher than ninety nine degrees,"The HI error code indicates that the unit is not able to maintain the setpoint temperature.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What should I do if I get an error code?,"Unplug the unit and plug it back in. If the error persists, look up the error code and how to fix it","If you get an error code, unplug the unit and plug it back in. If error repeats, call for service.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I remove the front panel?,Pull out at the bottom to release it from the tabs and then lift up,"To remove the front panel, pull out at the bottom to release it from the tabs (1). Then lift up (2).
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I test the power supply cord?,"Plug in the air conditioner, press the TEST button and then press the RESET button. The power supply cord should now be supplying electricity to the unit","Plug in the air conditioner. The power supply cord will have TWO buttons on the plug head. Press the TEST button; you will notice a click as the RESET button pops out. Press the RESET button; again, you will notice a",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What should I do if the power supply cord is damaged?,The power supply cord must be replaced,"The power supply cord must be replaced by one obtained from Direct Supply Equipment & Furnishings. When 265V units are to be installed, the power supply must be permanent wiring. Permanent wiring may be done through the accessory subbase. An exposed cord",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What kind of refrigerant is used?,The PTAC unit uses R-410A refrigerant,"R-410A refrigerant is used in all Direct Supply PTAC units.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is low temperature protection?,If the unit senses the room temperature to be below thirty two degrees then the fan motor will turn on and warm the room to forty degrees,"Low temperature protection is a safety feature that prevents the unit from operating at temperatures below the setpoint.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the recommended gauge for thermostat wire?,The recommended wire gauge is 18 to 20 gauge solid thermostat wire,"18- to 20-gauge solid thermostat wire is recommended.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I clean the air filters?,"Pull up on the air filter to remove, vacuum off heavy soil, run water through the filter, and dry thoroughly","To clean the air filters, follow these steps: 1. Turn off the unit and disconnect power supply. 2. To clean the air filters, use water and a mild detergent. DO NOT Pull up use bleach or abrasive cleaners. Some commercial",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What should I do if an air filter is torn or damaged?,If the filter is damaged then it should be replaced immediately,"If an air filter is torn or damaged, it should be replaced immediately.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How often should I clean the vent filter?,You should clean the vent filter twice a year,"The vent filter should be cleaned once every two weeks or as required.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Who do I call to request a warranty?,To request a warranty you can call Directy Supply Equipment and Furnishings at 1-800-634-7328,"Please contact Direct Supply Equipment & Furnishings at 1-800-634-7328, 6767 N. Industrial Road, Milwaukee, WI 53223, SalesSupport@DirectSupply.com 1-800-634-7328",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+Why does the PTAC vibrate?,Make sure the PTAC is secured firmly to the wall,"The PTAC is designed to vibrate when the compressor is running. This is normal.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I turn the PTAC off?,Press the red power button to turn the unit on or off,"Press the POWER button to turn the PTAC off.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What are the dimensions of the PTAC?,The dimensions of the PTAC are 42.0x16.0x23.9 inches,"The PTAC is approximately 16"" wide by 16"" deep by 16"" high.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the COOL mode?,This mode cools the room automatically when the room temperature is above the setpoint and stops when the room temperature is 4 degrees below the setpoint,"The COOL mode is used to cool the room.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the HEAT mode?,This mode heats the room automatically to the setpoint temperature,"The HEAT mode is used to heat the room.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What is the FAN mode?,This mode uses only the fan without any heating or cooling,"The FAN mode is used to control the fan speed. The fan speed can be set to run continuously in both heating and cooling mode via dip switch settings on the control board.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the Constant Fan button do?,"While in cooling mode, press this button to turn the constant fan function on or off. This will continuously run the fan","The Constant Fan button turns the Constant Fan function on or off. When the function is turned on, the constant fan light will illuminate. When the function is turned off, the POWER constant fan light will turn off.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I fix an AS error code?,"You should check the connection between the temperature sensor and the PCB. If that is fine, then measure the resistance of the sensor","If the AS error code is displayed, unplug the unit and plug it back in. If error repeats, call for service.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I fix an E5 error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor","The E5 error code indicates a problem with the evaporator coil. The evaporator coil is located in the outdoor unit.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I fix a CS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor","If the unit is in cooling mode, the compressor will cycle off after 5 minutes. If the unit is in heating mode, the compressor will cycle off after 5 minutes.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I fix an OS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor","If the unit displays an error code, unplug the unit and plug it back in. If the error code repeats, call for service.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I fix a HS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor","If the error code is HS, the unit will not operate. The HS error code will appear on the control panel display.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I fix an E4 error code?,Check the signal wire between the display board and the main board,"The E4 error code indicates a problem with the evaporator coil. The evaporator coil is located in the outdoor unit.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I fix a LE error code?,Check if the wiring between the controller and dip switch board is correct,"If the unit is in heating mode, the temperature setting can not be higher than 84°F/29°C.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+How do I access the dip switches?,Make sure the unit is powered off and then remove the front panel. The dip switches are located in the bottom right hand corner of the unit.,"To access the dip switches, remove the front panel. (See Fig. 1)
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the S1 dip switch do?,If the S1 switch is up then only electric heat is on. If the S1 switch is down then the electric heat and pump heat are on.,"The S1 dip switch controls the operation of the electric heat only.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the S2 dip switch do?,If the S2 switch is in the up position the temperature display is in Celsius. If the S2 switch is in the down position the temperature display is in Fahrenheit.,"The S2 dip switch controls the display of the temperature in °C or °F.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the S3 dip switch do?,"If the S3 switch is in the UP position, the wall thermostat is enabled. If the S3 switch is in the DOWN position, the control panel is enabled.","The S3 dip switch is used to connect a wired wall thermostat to the PTAC.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the S4 dip switch do?,The S4 and S5 switches are used together to select the temperature set point range.,The S4 dip switch is used to select the setpoint range for the unit. The unit can be set to a range of 61°F - 86°F (16°C - 30°C) or 65°F - 78°F,textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the S5 dip switch do?,The S4 and S5 switches are used together to select the temperature set point range.,"The S5 dip switch is used to select the setpoint range for the unit. The unit can be set to a range of 63°F - 80°F (17°C - 27°C).
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the S6 dip switch do?,"If the S6 switch is in the UP position, the fan is set to continuously run for heating. If the S6 switch is set in the DOWN position, the fan is set to cycle for heating.","The S6 dip switch is used to select the fan speed for heating or cooling.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the S7 dip switch do?,"If the S7 switch is in the UP position, the fan is set to continuously run for cooling. If the S7 switch is set in the DOWN position, the fan is set to cycle for cooling.","The S7 dip switch controls the fan speed and mode of the unit.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the S8 dip switch do?,"If the S8 switch is in the UP position, low temperature protection mode is enabled. If the S8 switch is set in the DOWN position, low temperature protection mode is disabled.","The S8 dip switch is used to enable or disable the Low Temp Protection feature.
+---",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What does the S9 dip switch do?,"If the S9 dip switch is in the UP position, it is set to use the wall thermostat. If the S9 dip switch is in the DOWN position, it is set to use the PTAC's thermostat.",The S9 dip switch is used with some types of wall thermostats. It is used to delay the fan operation for 3 seconds after the thermostat turns the unit on. This delay is used to allow the unit to reach the setpoint,textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What dos the S11 dip switch do?,"If the S11 dip switch is in the UP position, there is a load delay of 3 seconds. If the S11 dip switch is in the down position, it is set to normal.","The S11 dip switch is used to select the mode of operation for the PTAC.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
+What should I use to clean the PTAC?,"To clean, use water and a mild detergent","Use a soft cloth dampened with a mild detergent solution. Do not use any type of abrasive or solvent.
+===",textract-2022-04-20.jsonl search=ada model=curie max_tokens=50
