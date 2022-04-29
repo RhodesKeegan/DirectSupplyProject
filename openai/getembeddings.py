@@ -8,6 +8,10 @@ import numpy as np
 VALIDATION_FILE_PATH = "files/validation/qa_validation_set(2022-04-19)-model_output.csv"
 TOP_5_FILE_PATH = "files/validation/top5validation_answers.csv"
 
+NEW_VALIDATION_FILE_PATH = "files/validation/qa_validation_set(2022-04-29).csv"
+MODEL_OUTPUT_TEXTRACT = "files/validation/qa_validation_set(2022-04-29)-model_output-textract_only-CLEANED.csv"
+MODEL_OUTPUT_WEB = "files/validation/qa_validation_set(2022-04-29)-model_output-webscraped_only-CLEANED.csv"
+MODEL_OUTPUT_BOTH = "files/validation/qa_validation_set(2022-04-29)-model_output-webscraped_AND_textract-CLEANED.csv"
 
 def load_validation_file():
     df_val = pd.read_csv(VALIDATION_FILE_PATH)
@@ -45,9 +49,29 @@ def save_top5_embeddings():
             np.save(path, vecs_np)
 
 
+def save_val_true_embeddings():
+    df_val = pd.read_csv(NEW_VALIDATION_FILE_PATH)
+    path = "files/embeddings/3_model_experiment_openai/answer.npy"
+
+    answer_vecs = get_embeddings(list(df_val["answer"]), engine="text-similarity-davinci-001")
+    answer_np = np.array(answer_vecs)
+    np.save(path, answer_np)
+
+
+def save_val_output_embeddings():
+    df_val = pd.read_csv(MODEL_OUTPUT_BOTH)
+    path = "files/embeddings/3_model_experiment_openai/output-both.npy"
+
+    answer_vecs = get_embeddings(list(df_val["model_output"]), engine="text-similarity-davinci-001")
+    answer_np = np.array(answer_vecs)
+    np.save(path, answer_np)
+
+
 def main():
     # save_validation_set_embeddings()
     # save_top5_embeddings()
+    # save_val_true_embeddings()
+    # save_val_output_embeddings()
     pass
 
 
