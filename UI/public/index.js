@@ -17,6 +17,13 @@ async function askQuestion(e) {
         responseArea.style.display = 'block';
         const response = JSON.parse(xhr.responseText);
         responseArea.innerText = response.answers[0];
+
+        var speechVoice = new SpeechSynthesisUtterance();
+        var voices = speechSynthesis.getVoices();
+        speechVoice.voice = voices[2];
+        speechVoice.text = response.answers[0]
+        speechVoice.lang = 'en-GB';
+        speechSynthesis.speak(speechVoice);
       }
     };
 
@@ -53,6 +60,7 @@ class Banner extends React.Component {
       // })
 
       askQuestion(question);
+
     }
   }
 
