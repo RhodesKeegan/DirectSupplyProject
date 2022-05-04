@@ -149,11 +149,58 @@ def save_3_model_experiment_similarities():
     df_all.to_csv("files/embeddings/3_model_experiment_bert/results.csv", index=False)
 
 
+def save_final_experiment_similarities():
+    df_val = pd.read_csv("files/validation/qa_validation_set(2022-04-29).csv")
+    df_ada = pd.read_csv("files/validation/final_experiment/qa_validation_set(2022-04-29)-model_output-ada-ada-CLEANED.csv")
+    df_bab = pd.read_csv("files/validation/final_experiment/qa_validation_set(2022-04-29)-model_output-ada-babbage-CLEANED.csv")
+    df_cur = pd.read_csv("files/validation/final_experiment/qa_validation_set(2022-04-29)-model_output-ada-curie-CLEANED.csv")
+    df_dav = pd.read_csv("files/validation/final_experiment/qa_validation_set(2022-04-29)-model_output-ada-davinci-CLEANED.csv")
+
+    true_answers = np.load("files/embeddings/final_experiment/answer.npy")
+    ada_output = np.load("files/embeddings/final_experiment/output-ada-ada.npy")
+    bab_output = np.load("files/embeddings/final_experiment/output-ada-babbage.npy")
+    cur_output = np.load("files/embeddings/final_experiment/output-ada-curie.npy")
+    dav_output = np.load("files/embeddings/final_experiment/output-ada-davinci.npy")
+
+    ada_similarities = cosine_similarities(true_answers, ada_output)
+    ada_distances = euclidean_distances(true_answers, ada_output)
+
+    bab_similarities = cosine_similarities(true_answers, bab_output)
+    bab_distances = euclidean_distances(true_answers, bab_output)
+
+    cur_similarities = cosine_similarities(true_answers, cur_output)
+    cur_distances = euclidean_distances(true_answers, cur_output)
+
+    dav_similarities = cosine_similarities(true_answers, dav_output)
+    dav_distances = euclidean_distances(true_answers, dav_output)
+
+    df_all = df_val.copy()
+
+    df_all["ada_output"] = df_ada["model_output"]
+    df_all["ada_similarity"] = ada_similarities
+    df_all["ada_distance"] = ada_distances
+
+    df_all["bab_output"] = df_bab["model_output"]
+    df_all["bab_similarity"] = bab_similarities
+    df_all["bab_distance"] = bab_distances
+
+    df_all["cur_output"] = df_cur["model_output"]
+    df_all["cur_similarity"] = cur_similarities
+    df_all["cur_distance"] = cur_distances
+
+    df_all["dav_output"] = df_dav["model_output"]
+    df_all["dav_similarity"] = dav_similarities
+    df_all["dav_distance"] = dav_distances
+
+    df_all.to_csv("files/embeddings/final_experiment/results.csv", index=False)
+
+
 def main():
     # save_validation_similarities()
     # save_top5_similarities()
-    print_validation_combination_similarities()
+    # print_validation_combination_similarities()
     # save_3_model_experiment_similarities()
+    save_final_experiment_similarities()
     pass
 
 
