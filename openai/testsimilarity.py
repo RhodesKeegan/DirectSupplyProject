@@ -4,8 +4,8 @@ import itertools
 
 from openai.embeddings_utils import cosine_similarity
 
-EMBEDDINGS_DIR_VALID = "files/embeddings/2022-04-20-09-45-41/"
-EMBEDDINGS_DIR_TOP_5 = "files/embeddings/2022-04-22-11-55-58/"
+EMBEDDINGS_DIR_VALID = "files/embeddings/initial_experiment_bert/"
+EMBEDDINGS_DIR_TOP_5 = "files/embeddings/initial_experiment_bert/"
 
 VALIDATION_FILE_PATH = "files/validation/qa_validation_set(2022-04-19)-model_output.csv"
 TOP_5_FILE_PATH = "files/validation/top5validation_answers.csv"
@@ -34,8 +34,8 @@ def euclidean_distances(A, B):
 
 
 def save_validation_similarities():
-    answer = np.load(EMBEDDINGS_DIR_VALID + "answer.npy")
-    output = np.load(EMBEDDINGS_DIR_VALID + "output.npy")
+    answer = np.load(EMBEDDINGS_DIR_VALID + "original_answer.npy")
+    output = np.load(EMBEDDINGS_DIR_VALID + "original_output.npy")
 
     similarities = cosine_similarities(answer, output)
     distances = euclidean_distances(answer, output)
@@ -68,7 +68,7 @@ def save_top5_similarities():
     df_top5 = pd.read_csv(TOP_5_FILE_PATH)
     df_top5["mean_cosine_similarity"] = mean_similarities
     df_top5["mean_euclidean_distance"] = mean_distances
-    df_top5.to_csv(EMBEDDINGS_DIR_TOP_5 + "similarities.csv", index=False)
+    df_top5.to_csv(EMBEDDINGS_DIR_TOP_5 + "top5similarities.csv", index=False)
 
 
 def euclidean_distance(a, b):
@@ -88,8 +88,8 @@ def get_combination_similarity(matrix):
 
 
 def print_validation_combination_similarities():
-    answer = np.load(EMBEDDINGS_DIR_VALID + "answer.npy")
-    output = np.load(EMBEDDINGS_DIR_VALID + "output.npy")
+    answer = np.load(EMBEDDINGS_DIR_VALID + "original_answer.npy")
+    output = np.load(EMBEDDINGS_DIR_VALID + "original_output.npy")
 
     mean_answer_similarity, mean_answer_distance = get_combination_similarity(answer)
     mean_output_similarity, mean_output_distance = get_combination_similarity(output)
@@ -118,10 +118,10 @@ def save_3_model_experiment_similarities():
     df_web = pd.read_csv("files/validation/qa_validation_set(2022-04-29)-model_output-webscraped_only-CLEANED.csv")
     df_both = pd.read_csv("files/validation/qa_validation_set(2022-04-29)-model_output-webscraped_AND_textract-CLEANED.csv")
 
-    true_answers = np.load("files/embeddings/3_model_experiment_openai/answer.npy")
-    pdf_output = np.load("files/embeddings/3_model_experiment_openai/output-textract.npy")
-    web_output = np.load("files/embeddings/3_model_experiment_openai/output-web.npy")
-    both_output = np.load("files/embeddings/3_model_experiment_openai/output-both.npy")
+    true_answers = np.load("files/embeddings/3_model_experiment_bert/3model-val-answer-bert.npy")
+    pdf_output = np.load("files/embeddings/3_model_experiment_bert/3model-val-bert-textract.npy")
+    web_output = np.load("files/embeddings/3_model_experiment_bert/3model-val-bert-web.npy")
+    both_output = np.load("files/embeddings/3_model_experiment_bert/3model-val-bert-both.npy")
 
     pdf_similarities = cosine_similarities(true_answers, pdf_output)
     pdf_distances = euclidean_distances(true_answers, pdf_output)
@@ -146,13 +146,13 @@ def save_3_model_experiment_similarities():
     df_all["both_similarity"] = both_similarities
     df_all["both_distance"] = both_distances
 
-    df_all.to_csv("files/embeddings/3_model_experiment_openai/results.csv", index=False)
+    df_all.to_csv("files/embeddings/3_model_experiment_bert/results.csv", index=False)
 
 
 def main():
     # save_validation_similarities()
     # save_top5_similarities()
-    # print_validation_combination_similarities()
+    print_validation_combination_similarities()
     # save_3_model_experiment_similarities()
     pass
 

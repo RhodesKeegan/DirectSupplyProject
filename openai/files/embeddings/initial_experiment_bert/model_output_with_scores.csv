@@ -1,0 +1,71 @@
+question,answer,model_output,model,cosine_similarities,euclidean_distances
+What does the mode button do?,"This button cycles through the different modes which include COOL, HEAT, and FAN",The mode button is used to change the fan speed. The fan speed is controlled,first-run-raw(long-deleted).jsonl,0.7397312,0.72148293
+Why is the PTAC leaking fluid?,"There is most likely a crack in a pipe or the drain pan. This can be quickly fixed by using water sealant, but the best option is to replace the cracked pipe or pan",The PTAC is a refrigerant-based unit. When the unit is not,first-run-raw(long-deleted).jsonl,0.08694167,1.3513387
+How often should I clean the air filter?,The air filter should be cleaned once every two weeks,Cleaning the air filter is a simple and easy task. Simply follow the instructions,first-run-raw(long-deleted).jsonl,0.7123332,0.7585074
+What does PTAC stand for?,PTAC stands for Packages Terminal Air Conditioner,"PTAC stands for ""Post-Maintenance Check"".
+===
+Context:",first-run-raw(long-deleted).jsonl,0.7721545,0.67504895
+Why is the fan not working?,The fan motor may be faulty or there could be debris in the way restricting its movement,"The fan motor is not working.
+
+===
+Context: This appliance is",first-run-raw(long-deleted).jsonl,0.6370643,0.851981
+Why is the PTAC so noisy?,The fan blades may be loose,"The PTAC is a high-efficiency, high-efficiency, high-efficiency",first-run-raw(long-deleted).jsonl,-0.010047509,1.4213004
+Why is there ice forming on my PTAC?,Ice can form due to a buildup of dirt and dust within the system,Ice forms on the coils when the refrigerant is not being circulated properly. Ice,first-run-raw(long-deleted).jsonl,0.5113736,0.988561
+When should should a PTAC be replaced?,You should change your PTAC unit every 10 years.,"When the unit is in need of repair or replacement.
+---",first-run-raw(long-deleted).jsonl,0.4447735,1.0537803
+Why is the PTAC overheating?,This can be caused by not enough refrigerant in the system or a kink in the refrigerant line,The PTAC is designed to operate at a constant temperature of -40°F,first-run-raw(long-deleted).jsonl,0.3032419,1.1804732
+Why is my PTAC not turning on?,"Make sure it is properly connected to a reliable power source. If so, use a multi-meter to test to the terminal strip for voltage","Your PTAC unit is not turning on.
+---",first-run-raw(long-deleted).jsonl,0.41486612,1.0817889
+Why is the PTAC spitting out water?,The position might need to be adjusted. Make sure the PTAC is level,The PTAC is designed to operate with a refrigerant that is not designed to,first-run-raw(long-deleted).jsonl,0.33221617,1.1556675
+Why is the PTAC not cooling the room to the desired temperature?,"Check to see that it has refrigerant. If so, the PTAC may need a new thermostat",The PTAC unit is designed to provide a minimum of cooling to the room.,first-run-raw(long-deleted).jsonl,0.57689273,0.91989934
+Why is the PTAC not heating the room to the desired temperature?,The PTAC may need a new thermostat,"The PTAC is designed to provide a warm, comfortable environment for the guest.",first-run-raw(long-deleted).jsonl,0.46539828,1.0340229
+How can I make my PTAC more efficient?,Make sure the unit and air filters are clean,The PTAC is designed to operate at a constant speed. The unit is designed,first-run-raw(long-deleted).jsonl,0.1477651,1.3055534
+How does the cooling work?,Cooling begins automatically when the room temperature is four degrees below the setpoint,The cooling system works by sending refrigerant to the coils. The coils attract heat,first-run-raw(long-deleted).jsonl,0.4796442,1.0201528
+What is the maximum temperature that I can set?,The maximum temperature is eighty four degrees,The maximum temperature that you can set is the temperature that you want to use.,first-run-raw(long-deleted).jsonl,0.5783447,0.9183194
+How do I change the temperature?,Press the plus or minus buttons to increase or decrease the temperature,Turn off the unit and remove the fan. Turn the unit on again and remove,first-run-raw(long-deleted).jsonl,0.41414794,1.0824528
+How do I switch between fahrenheit and celsius?,Press and hold both the plus and minus buttons to change between fahrenheit and celsius,The unit is set to fahrenheit. The unit is set to celsius,first-run-raw(long-deleted).jsonl,0.7756427,0.6698618
+How do I change the fan speed?,Press the button labeled speed to change the speed of the fan,"Turn the unit off and unplug it.
+---",first-run-raw(long-deleted).jsonl,0.37603083,1.117112
+What is the LC error code?,The LC error code indicates that the PTAC control panel is disabled and can only be controlled via the wall thermostat,The LC error code is a code that indicates that the fan is not operating properly,first-run-raw(long-deleted).jsonl,0.6548481,0.83084536
+What is the FC error code?,The FC error code indicates that the PTAC control panel is disabled and can only be controlled via the front desk control,The FC error code is a code that indicates that the fan is not operating properly,first-run-raw(long-deleted).jsonl,0.57590604,0.9209715
+What is the AS error code?,The AS error code indicates there is a room temperature sensor error,The AS error code is a code that indicates that the unit is not operating properly,first-run-raw(long-deleted).jsonl,0.75614274,0.6983655
+What is the ES error code?,The ES error code indicates there is an evaporator temperature sensor error,The ES error code is a code that indicates that the unit is not operating properly,first-run-raw(long-deleted).jsonl,0.7756318,0.66987807
+What is the CS error code?,The CS error code indicates there is a condenser temperature sensor error,The CS error code is a code that indicates that the PTAC is not operating,first-run-raw(long-deleted).jsonl,0.6220224,0.86945695
+What is the OS error code?,The OS error code indicates there is an outside temperature sensor error,The OS error code is the number that is displayed on the LCD screen when the,first-run-raw(long-deleted).jsonl,0.5713333,0.9259228
+What is the HS error code?,The HS error code indicates there is an exhaust temperature sensor error,The HS error code is a code that indicates that the PTAC is not operating,first-run-raw(long-deleted).jsonl,0.60662174,0.8869931
+What is the LE error code?,The LE error code indicates there is a wall thermostat error,The LE error code is a code that indicates that the unit is not operating properly,first-run-raw(long-deleted).jsonl,0.7858917,0.65438265
+What is the LO error code?,The LO error code indicates the room temperature is lower than thirty two degrees,The LO error code is a code that indicates that the unit is not operating properly,first-run-raw(long-deleted).jsonl,0.8089615,0.6181238
+What is the FP error code?,The FP error code indicates the unit is in low temperature protection mode,The FP error code is a code that indicates that the fan is not operating properly,first-run-raw(long-deleted).jsonl,0.7701601,0.677997
+What is the HI error code?,The HI error code indicates the room temperature is higher than ninety nine degrees,The HI error code is a code that indicates that the unit is not operating properly,first-run-raw(long-deleted).jsonl,0.74908483,0.70839965
+What should I do if I get an error code?,"Unplug the unit and plug it back in. If the error persists, look up the error code and how to fix it","If you get an error code, it means something is wrong with your unit.",first-run-raw(long-deleted).jsonl,0.761974,0.6899653
+How do I remove the front panel?,Pull out at the bottom to release it from the tabs and then lift up,"The front panel is held in place by a spring-loaded latch.
+The",first-run-raw(long-deleted).jsonl,0.29751846,1.1853116
+How do I test the power supply cord?,"Plug in the air conditioner, press the TEST button and then press the RESET button. The power supply cord should now be supplying electricity to the unit",Test the power supply cord with a multimeter. If the power supply cord is,first-run-raw(long-deleted).jsonl,0.4681738,1.0313352
+What should I do if the power supply cord is damaged?,The power supply cord must be replaced,"If the power supply cord is damaged, you should replace it.
+---",first-run-raw(long-deleted).jsonl,0.89479667,0.45870134
+What kind of refrigerant is used?,The PTAC unit uses R-410A refrigerant,Freon is the refrigerant used in most PTAC units. It is a,first-run-raw(long-deleted).jsonl,0.80264944,0.62825245
+What is low temperature protection?,If the unit senses the room temperature to be below thirty two degrees then the fan motor will turn on and warm the room to forty degrees,Low temperature protection is a feature that is available on some units. It is a,first-run-raw(long-deleted).jsonl,0.346029,1.1436526
+What is the recommended gauge for thermostat wire?,The recommended wire gauge is 18 to 20 gauge solid thermostat wire,"The recommended gauge for thermostat wire is 1/4 inch.
+,,",first-run-raw(long-deleted).jsonl,0.8885309,0.47216332
+How do I clean the air filters?,"Pull up on the air filter to remove, vacuum off heavy soil, run water through the filter, and dry thoroughly","Air filters are cleaned by running water through them.
+---",first-run-raw(long-deleted).jsonl,0.69982463,0.7748231
+What should I do if an air filter is torn or damaged?,If the filter is damaged then it should be replaced immediately,"If an air filter is torn or damaged, replace it with a new one.",first-run-raw(long-deleted).jsonl,0.81161314,0.61381924
+How often should I clean the vent filter?,You should clean the vent filter twice a year,The PTAC vent filter should be cleaned at least once a year.,first-run-raw(long-deleted).jsonl,0.80648714,0.6221141
+Who do I call to request a warranty?,To request a warranty you can call Directy Supply Equipment and Furnishings at 1-800-634-7328,"Call the manufacturer or the HVAC company.
+---",first-run-raw(long-deleted).jsonl,0.4530537,1.0458933
+Why does the PTAC vibrate?,Make sure the PTAC is secured firmly to the wall,"The PTAC vibrates to help keep the coils from freezing.
+===",first-run-raw(long-deleted).jsonl,0.43520686,1.0628201
+How do I turn the PTAC off?,Press the red power button to turn the unit on or off,"The PTAC is powered by the fan. To turn the PTAC off,",first-run-raw(long-deleted).jsonl,0.43379882,1.0641439
+What are the dimensions of the PTAC?,The dimensions of the PTAC are 42.0x16.0x23.9 inches,The PTAC is approximately 1.5 to 2 feet (0.5 to,first-run-raw(long-deleted).jsonl,0.589952,0.9055915
+What is the COOL mode?,This mode cools the room automatically when the room temperature is above the setpoint and stops when the room temperature is 4 degrees below the setpoint,The COOL mode is the mode that the unit is in when it is not,first-run-raw(long-deleted).jsonl,0.64537984,0.84216434
+What is the HEAT mode?,This mode heats the room automatically to the setpoint temperature,The HEAT mode is a mode that allows the unit to run at a higher,first-run-raw(long-deleted).jsonl,0.6960788,0.7796425
+What is the FAN mode?,This mode uses only the fan without any heating or cooling,The FAN mode is the mode that the unit is in when it is not,first-run-raw(long-deleted).jsonl,0.761106,0.69122237
+What does the Constant Fan button do?,"While in cooling mode, press this button to turn the constant fan function on or off. This will continuously run the fan","The Constant Fan button is used to control the fan speed.
+The fan speed",first-run-raw(long-deleted).jsonl,0.62931603,0.8610274
+How do I fix an AS error code?,"You should check the connection between the temperature sensor and the PCB. If that is fine, then measure the resistance of the sensor",The AS error code is a code that indicates that the unit is not working properly,first-run-raw(long-deleted).jsonl,0.33527562,1.1530176
+How do I fix an E5 error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor",The E5 error code is a code that indicates that the unit is not working,first-run-raw(long-deleted).jsonl,0.34843978,1.1415431
+How do I fix a CS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor",The CS error code is a code that indicates a problem with the unit. The,first-run-raw(long-deleted).jsonl,0.27398002,1.2050064
+How do I fix an OS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor",The OS error code is a number that is displayed on the LCD screen of the,first-run-raw(long-deleted).jsonl,0.20006584,1.2648593
+How do I fix a HS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor",You can try to reset the unit by turning the unit on and then turning it,first-run-raw(long-deleted).jsonl,0.3126324,1.1724913
+How do I fix an E4 error code?,Check the signal wire between the display board and the main board,The E4 error code is a code that indicates that the unit is not working,first-run-raw(long-deleted).jsonl,0.34395155,1.1454681
+How do I fix a LE error code?,Check if the wiring between the controller and dip switch board is correct,The first thing you should do is to check the unit's status. If it,first-run-raw(long-deleted).jsonl,0.33567786,1.1526685
