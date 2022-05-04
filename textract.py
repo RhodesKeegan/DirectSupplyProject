@@ -1,17 +1,17 @@
 # Source used: https://github.com/RekhuGopal/PythonHacks/blob/main/AWSBoto3Hacks/AWSboto3TextAnalytics-AmazonTextract.py
 
-from unicodedata import name
 import boto3
 import time
 import json
 
-qa_list = [] 
+qa_list = [] # used for appending (string, pdf_name) pairs
 aws_access_key_id=""
 aws_secret_access_key= ""
 
 # S3 Document Data
 s3BucketName = "mybucket22222223"
-documentNames = ["sample 1.pdf", "sample 2.pdf", "sample 3.pdf"]
+# documentNames = ["sample 1.pdf", "sample 2.pdf", "sample 3.pdf", "sample 4.pdf", "sample 5.pdf", "sample 6.pdf", "sample 7.pdf"] # make sure these PDFs are in the S3 bucket as well
+documentNames = ["sample 2.pdf"] # make sure these PDFs are in the S3 bucket as well
 
 ## Textract APIs used - "start_document_text_detection", "get_document_text_detection"
 def InvokeTextDetectJob(s3BucketName, objectName):
@@ -69,6 +69,7 @@ def appendPage(page):
 				if item["BlockType"] == "LINE":
 					# print ('\033[94m' + item["Text"] + '\033[0m')
 					# string += '\033[94m' + item["Text"] + '\033[0m'
+				
 					string += item["Text"] + " "
 	return string
 
@@ -83,11 +84,13 @@ if __name__ == "__main__":
 			for resultPage in response: # for each page
 				
 				string = appendPage(resultPage)
+				if "PTAC Specifications" in string and pdf == "sample 2.pdf":
+					import pdb; pdb.set_trace()
 				qa_list.append((string, pdf))
 
 		
 # file path to write to
-jsonl_fp = "data.json9"
+jsonl_fp = "data.json10"
 
 # the desired keys for the dictionary
 keys = ['text', 'metadata']
