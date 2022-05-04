@@ -1,7 +1,7 @@
 import pandas as pd
 
-MODEL_OUTPUT_FILE = "qa_validation_set(2022-04-29)-model_output-webscraped_only.csv"
-CLEANED_MODEL_OUTPUT_FILE = "qa_validation_set(2022-04-29)-model_output-webscraped_only-CLEANED.csv"
+MODEL_OUTPUT_FILE = "final_experiment/qa_validation_set(2022-04-29)-model_output-ada-davinci.csv"
+CLEANED_MODEL_OUTPUT_FILE = "final_experiment/qa_validation_set(2022-04-29)-model_output-ada-davinci-CLEANED.csv"
 
 
 def clean_output(output):

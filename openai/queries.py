@@ -71,7 +71,7 @@ def ask_question(question, file_id):
 
     http_response = openai.Answer.create(
         search_model="ada",  # ID of engine used for search (ada, babbage, curie, davinci)
-        model="curie",  # ID of engine used for completion (ada, babbage, curie, davinci)
+        model="davinci",  # ID of engine used for completion (ada, babbage, curie, davinci)
         question=question,
         file=file_id,
         examples_context=examples_context,
@@ -169,10 +169,10 @@ def get_answer(question, file_id):
 # textract-2022-04-20.jsonl                     file-g8aRinmdh7jA03RXSq8KVH93
 # webscraped_AND_textract-2022-04-20.jsonl      file-6ucL1y3k6O4Qhm79ZtXhJLw6
 # webscraped-raw.jsonl                          file-7b3suQAG37bwTCtA8OAFZuUg
-# final-textract-2022-05-04.jsonl
+# final-textract-2022-05-04.jsonl               file-zWwFvldd6tO7hQhYEYCbI73U
 def ask_validation_set(file_id, model_description):
     validation_file_path = "files/validation/qa_validation_set(2022-04-29).csv"
-    validation_output_file_path = "files/validation/qa_validation_set(2022-04-29)-model_output-webscraped_only.csv"
+    validation_output_file_path = "files/validation/final_experiment/qa_validation_set(2022-04-29)-model_output-ada-davinci.csv"
 
     df_validation = pd.read_csv(validation_file_path)
 
@@ -201,6 +201,11 @@ def main():
     # ask_validation_set("file-g8aRinmdh7jA03RXSq8KVH93", "textract-2022-04-20.jsonl search=ada model=curie max_tokens=50")
     # ask_validation_set("file-6ucL1y3k6O4Qhm79ZtXhJLw6", "webscraped_AND_textract-2022-04-20.jsonl search=ada model=curie max_tokens=50")
     # ask_validation_set("file-7b3suQAG37bwTCtA8OAFZuUg", "webscraped-raw.jsonl search=ada model=curie max_tokens=50")
+
+    # ask_validation_set("file-zWwFvldd6tO7hQhYEYCbI73U", "final-textract-2022-05-04.jsonl search=ada model=ada max_tokens=50")
+    # ask_validation_set("file-zWwFvldd6tO7hQhYEYCbI73U", "final-textract-2022-05-04.jsonl search=ada model=babbage max_tokens=50")
+    # ask_validation_set("file-zWwFvldd6tO7hQhYEYCbI73U", "final-textract-2022-05-04.jsonl search=ada model=curie max_tokens=50")
+    # ask_validation_set("file-zWwFvldd6tO7hQhYEYCbI73U", "final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50")
     pass
 
 

@@ -43,25 +43,20 @@ def save_top5_embeddings():
 
 
 def save_validation_embeddings():
-    df_val = load_file()
-    directory = "files/embeddings/3_model_experiment_bert/"
+    df_val = pd.read_csv("files/validation/final_experiment/qa_validation_set(2022-04-29)-model_output-ada-davinci-CLEANED.csv")
+    directory = "files/embeddings/final_experiment/"
 
     bert_model = SentenceTransformer('all-mpnet-base-v2')
 
     # answers = list(df_val["answer"])
     # answer_embeddings = np.array(bert_model.encode(answers))
     #
-    # np.save(directory + "3model-val-answer-3_model_experiment_bert.npy", answer_embeddings)
-
-    # for sentence, embedding in zip(answers, answer_embeddings):
-    #     print("Answer: ", sentence)
-    #     print("Embedding: ", embedding)
-    #     print("")
+    # np.save(directory + "answer.npy", answer_embeddings)
 
     outputs = list(df_val["model_output"])
     output_embeddings = bert_model.encode(outputs)
 
-    np.save(directory + "3model-val-3_model_experiment_bert-web.npy", output_embeddings)
+    np.save(directory + "output-ada-davinci.npy", output_embeddings)
 
 
 def main():

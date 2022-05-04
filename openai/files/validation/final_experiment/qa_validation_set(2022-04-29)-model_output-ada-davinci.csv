@@ -1,0 +1,144 @@
+question,answer,model_output,model
+What does the mode button do?,"This button cycles through the different modes which include COOL, HEAT, and FAN","The mode button allows the user to select the operating mode of the unit.
+ The mode button allows the user to select the operating mode of the unit.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why is the PTAC leaking water?,"If a drain kit has not been installed, condensation runoff during hot and humid weather is normal. If a drain kit has been installed and is connected to a drain system, check gaskets and fittings around drain for leaks and plugs.","The PTAC is designed to remove condensate from the indoor coil and drain it to the condenser. Condensate may leak from the unit if the drain line is clogged or the drain line is not installed properly.
+===
+Q",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How often should I clean the air filter?,The air filter should be cleaned once every two weeks,"Clean the air filter every 30 days.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does PTAC stand for?,PTAC stands for Packaged Terminal Air Conditioner,"PTAC stands for Packaged Terminal Air Conditioner.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why is the fan not working?,The fan motor may be faulty or there could be debris in the way restricting its movement,"The fan will not operate if the unit is in the OFF mode.
+ The fan will not operate if the unit is in the OFF mode.
+ The fan will not operate if the unit is in the OFF mode.
+A",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why is the PTAC making noise?,"Clicking, gurgling, and whooshing noises are normal during operation of unit.","The PTAC is designed to make some noise. The noise is caused by the compressor and fan motor. The noise is normal and should not be considered a defect.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why is there ice forming on my PTAC?,"When outdoor temperature is approximately 55 degrees Fahrenheit or below, frost may form on the indoor coil when unit is in cooling mode. Switch unit to FAN operation until ice or frost melts.","When the outdoor temperature is approximately 55°F or below, frost may form on the indoor coil when the unit is in cooling mode. Switch the unit to FAN operation until the ice or frost melts.
+ Why is there water dripping from",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+When should should a PTAC be replaced?,You should change your PTAC unit every 10 years.,"A PTAC should be replaced when it is no longer able to maintain the desired room temperature.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why is the PTAC overheating?,This can be caused by not enough refrigerant in the system or a kink in the refrigerant line,"The PTAC is overheating because the room is too cold.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why is my PTAC not turning on?,"Make sure it is properly connected to a reliable power source. If so, use a multi-meter to test to the terminal strip for voltage","The unit may be in the defrost cycle. Check the defrost timer.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why is the PTAC spitting out water?,The position might need to be adjusted. Make sure the PTAC is level,"The PTAC is spitting out water because the drain line is clogged.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why is the PTAC not cooling the room to the desired temperature?,"Check to see that it has refrigerant. If so, the PTAC may need a new thermostat","The room temperature may be too high.
+ The room may be too large.
+ The room may be too cold.
+ The room may be too hot.
+ The room may be too humid.
+A",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why is the PTAC not heating the room to the desired temperature?,The PTAC may need a new thermostat,"The PTAC is not heating the room to the desired temperature because the thermostat is not calling for heat.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How can I make my PTAC more efficient?,Make sure the unit and air filters are clean,"The following tips will help you get the most out of your PTAC:
+1. Keep the area around the unit clear of furniture, drapes, bedspreads, etc.
+2. Keep the area around the unit free of clutter",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How does the cooling work?,Cooling begins automatically when the room temperature is four degrees below the setpoint,"The cooling cycle is a two-stage process. First, the compressor compresses the refrigerant gas, which is then sent to the condenser coil. The condenser coil is located outside the unit and is cooled by the outdoor air. The refriger",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the maximum temperature that I can set?,The maximum temperature is eighty four degrees,"The maximum temperature can be set up to 84°F/29°C.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I change the temperature?,Press the plus or minus buttons to increase or decrease the temperature,"The temperature is adjusted by pressing the ""Warm"" or ""Cool"" buttons. Each time the button is depressed it changes the temperature, for three seconds and then defaults back to the room temperature.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I switch between fahrenheit and celsius?,Press and hold both the plus and minus buttons to change between fahrenheit and celsius,Press the MODE button until the 2 appears in the first digit of the display. Press the - pad to select Celsius or the + pad to select Fahrenheit. The individual will see an F for Fahrenheit or a C for Celsius in the second digit of,final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I change the fan speed?,Press the button labeled speed to change the speed of the fan,"Press the + or - pad to change the fan speed.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the LC error code?,The LC error code indicates that the PTAC control panel is disabled and can only be controlled via the wall thermostat,"The LC error code indicates that the unit is not receiving a signal from the wireless remote thermostat.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the FC error code?,The FC error code indicates that the PTAC control panel is disabled and can only be controlled via the front desk control,"FC is the freeze protection error code.
+---",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the AS error code?,The AS error code indicates there is a room temperature sensor error,"The AS error code indicates that the room temperature sensor is not working properly.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the ES error code?,The ES error code indicates there is an evaporator temperature sensor error,"The ES error code indicates that the evaporator temperature sensor is not working properly.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the CS error code?,The CS error code indicates there is a condenser temperature sensor error,"Condenser temperature sensor error.
+---",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the OS error code?,The OS error code indicates there is an outside temperature sensor error,"The OS error code is a number that indicates the problem with the unit.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the HS error code?,The HS error code indicates there is an exhaust temperature sensor error,"The HS error code indicates that the outside temperature sensor is not working properly.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the LE error code?,The LE error code indicates there is a wall thermostat error,"LE error code indicates that the wall thermostat is not communicating with the PTAC.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the LO error code?,The LO error code indicates the room temperature is lower than thirty two degrees,"The LO error code indicates that the unit is in Locked Membrane mode.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the FP error code?,The FP error code indicates the unit is in low temperature protection mode,"The FP error code indicates that the Freeze Protection mode has been activated.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the HI error code?,The HI error code indicates the room temperature is higher than ninety nine degrees,"The HI error code indicates that the room temperature is higher than 99°F/37°C.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What should I do if I get an error code?,"Unplug the unit and plug it back in. If the error persists, look up the error code and how to fix it","If you get an error code, check the following:
+1. Check the unit's power supply.
+2. Check the unit's power cord for damage.
+3. Check the unit's power switch for proper operation.
+4. Check",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I remove the front panel?,Pull out at the bottom to release it from the tabs and then lift up,"Pull out at the bottom to release it from the tabs, then lift up.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I test the power supply cord?,"Plug in the air conditioner, press the TEST button and then press the RESET button. The power supply cord should now be supplying electricity to the unit","Plug in the air conditioner. The power supply cord will have TWO buttons on the plug head. Press the TEST button; you will notice a click as the RESET button pops out. Press the RESET button; again, you will notice a",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What should I do if the power supply cord is damaged?,The power supply cord must be replaced,"The power supply cord must be replaced by one obtained from Direct Supply Equipment & Furnishings.
+ The power supply cord must be replaced by one obtained from Direct Supply Equipment & Furnishings.
+ The power supply cord must be",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What kind of refrigerant is used?,The PTAC unit uses R-410A refrigerant,"R-410A
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is low temperature protection?,If the unit senses the room temperature to be below thirty two degrees then the fan motor will turn on and warm the room to forty degrees,"Low temperature protection is a safety feature that will stop the unit from running if the temperature is too low.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the recommended gauge for thermostat wire?,The recommended wire gauge is 18 to 20 gauge solid thermostat wire,"Thermostat wire is not supplied with the PTAC. Recommended wire gauge is 18- to 20-gauge solid thermostat wire.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I clean the air filters?,"Pull up on the air filter to remove, vacuum off heavy soil, run water through the filter, and dry thoroughly","Vacuum off the heavy soil. Run water through the filters from the back side.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What should I do if an air filter is torn or damaged?,If the filter is damaged then it should be replaced immediately,"Replace the air filter immediately.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How often should I clean the vent filter?,You should clean the vent filter twice a year,"Clean the vent filter twice a year or as required.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Who do I call to request a warranty?,To request a warranty you can call Directy Supply Equipment and Furnishings at 1-800-634-7328,"Please call the number on the back of your warranty card.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+Why does the PTAC vibrate?,Make sure the PTAC is secured firmly to the wall,"The PTAC may vibrate when the unit is operating. This is normal and is not a cause for concern.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I turn the PTAC off?,Press the red power button to turn the unit on or off,"The PTAC can be remotely turned on and off via the front desk control by applying a 24VAC signal across terminals FC(L) and FC(N). If 24VAC is present, the PTAC will turn on. If 24V",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What are the dimensions of the PTAC?,The dimensions of the PTAC are 42.0x16.0x23.9 inches,"The PTAC is 42"" high, 24"" wide, and 40"" deep.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the COOL mode?,This mode cools the room automatically when the room temperature is above the setpoint and stops when the room temperature is 4 degrees below the setpoint,"The COOL mode is used to cool the room.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the HEAT mode?,This mode heats the room automatically to the setpoint temperature,"In heating mode, the unit can alternate between reverse cycle heat mode and electric heat mode depending on the difference between the set temperature and the room temperature.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What is the FAN mode?,This mode uses only the fan without any heating or cooling,"The FAN mode is used to circulate air in the room without cooling or heating.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the Constant Fan button do?,"While in cooling mode, press this button to turn the constant fan function on or off. This will continuously run the fan","Pressing the ""Constant Fan"" button will provide constant or cycle fan operation in cooling or heating modes. The fan speed selection is made by pressing either ""High"" or ""Low"" or ""Auto"" fan speed button.
+
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I fix an AS error code?,"You should check the connection between the temperature sensor and the PCB. If that is fine, then measure the resistance of the sensor",Check the following: 1. Check the power cord and power outlet. 2. Check the air filter. 3. Check the air conditioner's operation. 4. Check the room temperature sensor. 5. Check the exhaust temperature sensor. 6. Check,final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I fix an E5 error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor","The outdoor coil sensor is located on the outdoor coil. The sensor is a thermistor that measures the temperature of the outdoor coil. If the sensor is broken or loose, the unit will display an E5 error code.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I fix a CS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor","Check the evaporator temperature sensor. If the sensor is dirty, clean it. If the sensor is not dirty, replace it.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I fix an OS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor","If you have an OS error code, please contact Direct Supply at 1-800-634-7328.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I fix a HS error code?,"You should check the connection between the temperature sensor and the PCB  If that is fine, then measure the resistance of the sensor","The HS error code indicates that the PTAC is not receiving a signal from the wireless remote thermostat. The wireless remote thermostat may be out of range, or the batteries may be dead.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I fix an E4 error code?,Check the signal wire between the display board and the main board,"The IDC sensor and ODC sensor must be secured to the coils.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I fix a LE error code?,Check if the wiring between the controller and dip switch board is correct,"If the LE error code appears, unplug the unit and plug it back in. If the error code continues to appear, call for service.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+How do I access the dip switches?,Make sure the unit is powered off and then remove the front panel. The dip switches are located in the bottom right hand corner of the unit.,"The dip switches are located behind the front panel. To access them, remove the front panel. See Fig. 11.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the S1 dip switch do?,If the S1 switch is up then only electric heat is on. If the S1 switch is down then the electric heat and pump heat are on.,"The S1 dip switch is used to select the type of heat pump operation.
+ The S2 dip switch is used to select the temperature display between °F and °C.
+ The S3 dip switch is used to enable",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the S2 dip switch do?,If the S2 switch is in the up position the temperature display is in Celsius. If the S2 switch is in the down position the temperature display is in Fahrenheit.,"The S2 dip switch allows the user to select the temperature display between °F and °C.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the S3 dip switch do?,"If the S3 switch is in the UP position, the wall thermostat is enabled. If the S3 switch is in the DOWN position, the control panel is enabled.","The S3 dip switch is used to enable or disable the wall thermostat.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the S4 dip switch do?,The S4 and S5 switches are used together to select the temperature set point range.,"The S4 dip switch is used to select the temperature range.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the S5 dip switch do?,The S4 and S5 switches are used together to select the temperature set point range.,"The S5 dip switch is used to select the temperature range.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the S6 dip switch do?,"If the S6 switch is in the UP position, the fan is set to continuously run for heating. If the S6 switch is set in the DOWN position, the fan is set to cycle for heating.","The S6 dip switch is used to enable or disable the low temperature protection function.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the S7 dip switch do?,"If the S7 switch is in the UP position, the fan is set to continuously run for cooling. If the S7 switch is set in the DOWN position, the fan is set to cycle for cooling.","The S7 dip switch is used to select the fan speed mode.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the S8 dip switch do?,"If the S8 switch is in the UP position, low temperature protection mode is enabled. If the S8 switch is set in the DOWN position, low temperature protection mode is disabled.","The S8 dip switch is used with some types of wall thermostats. If the unit is installed with a wall thermostat that does not have a ""hold"" feature, the S8 dip switch must be set to the UP position.",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What does the S9 dip switch do?,"If the S9 dip switch is in the UP position, it is set to use the wall thermostat. If the S9 dip switch is in the DOWN position, it is set to use the PTAC's thermostat.","The S9 dip switch is used with some types of wall thermostats. Try with the switch in the UP position first. If this doesn't work, try again with the switch in the DOWN position.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What dos the S11 dip switch do?,"If the S11 dip switch is in the UP position, there is a load delay of 3 seconds. If the S11 dip switch is in the down position, it is set to normal.","The S11 dip switch is used to select the type of thermostat connected to the unit.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
+What should I use to clean the PTAC?,"To clean, use water and a mild detergent","Use a soft cloth with a mild detergent and water. Do not use abrasive cleaners or scouring pads.
+===",final-textract-2022-05-04.jsonl search=ada model=davinci max_tokens=50
