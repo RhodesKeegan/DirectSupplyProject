@@ -1,0 +1,1 @@
+We currently are using AWS Textract over PyPDF2. When originally experimenting with PyPDF2, there was way too much hardcoded logic (i.e. separating by periods, etc.). However, after experimenting with AWS Textract, this was a much better solution that easily grabbed all text from PDFs. See the README.md under AWS Textract for instructions. 
