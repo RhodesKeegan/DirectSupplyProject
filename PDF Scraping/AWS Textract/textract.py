@@ -63,13 +63,7 @@ def JobResults(jobId):
 def appendPage(page):
 	string = ""
 	for item in page["Blocks"]: # for contents of each page
-				# import pdb; pdb.set_trace()
-				# if item["BlockType"] == "WORD":
-					# import pdb; pdb.set_trace()
 				if item["BlockType"] == "LINE":
-					# print ('\033[94m' + item["Text"] + '\033[0m')
-					# string += '\033[94m' + item["Text"] + '\033[0m'
-				
 					string += item["Text"] + " "
 	return string
 
@@ -84,8 +78,6 @@ if __name__ == "__main__":
 			for resultPage in response: # for each page
 				
 				string = appendPage(resultPage)
-				if "PTAC Specifications" in string and pdf == "sample 2.pdf":
-					import pdb; pdb.set_trace()
 				qa_list.append((string, pdf))
 
 		
