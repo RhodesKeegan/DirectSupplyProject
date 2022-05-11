@@ -19,7 +19,7 @@
 
 This script contains various methods to interact with the OpenAI API including functionality for uploading files, listing uploaded files, and asking the model questions.
 
-The purpose of this script was for uploading documents and performing queries using our validation set, so the methods can be run by uncommenting the associated calls in the main method. Cetrain methods may need to be modified for appropriate functionality (i.e., changing the model engine). Using this script to query the validation set questions results in a 
+The purpose of this script was for uploading documents and performing queries using our validation set, so the methods can be run by uncommenting the associated calls in the main method. Cetrain methods may need to be modified for appropriate functionality (i.e., changing the model engine). Using this script to query the validation set questions results in files being saved. See the directory structure for these files.
 
 Note that the API key needs to be set as an environment variable. This can be done in PyCharm by editing the run configuration for this script and including "OPENAI_API_KEY=<api_key_here>" as an environment variable.
 
