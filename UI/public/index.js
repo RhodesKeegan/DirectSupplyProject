@@ -16,7 +16,7 @@ async function askQuestion(e) {
         const responseArea = document.getElementById('responseArea');
         responseArea.style.display = 'block';
         let response = JSON.parse(xhr.responseText);
-        response = response.answers[0].replace(/=-/g, '');
+        response = response.answers[0].replace(/=/g, '');
         responseArea.innerText = response;
         var speechVoice = new SpeechSynthesisUtterance();
         var voices = speechSynthesis.getVoices();
