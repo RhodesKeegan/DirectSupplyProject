@@ -16,7 +16,8 @@ body{
     2px 2px 0 #000;
 }
 .fade-in-greeting {
-     animation: fade 1.5s ease-in forwards;
+    animation: fade 1.5s ease-in forwards;
+
 }
 
 .fade-in-subtext{

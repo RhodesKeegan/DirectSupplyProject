@@ -24,8 +24,19 @@ async function askQuestion(e){
             if (xhr.readyState === 4) {
                 const responseArea = document.getElementById('responseArea');
                 responseArea.style.display = 'block';
-                const response = JSON.parse(xhr.responseText)
-                responseArea.innerText = response.answers[0];
+                let response = JSON.parse(xhr.responseText)
+
+
+                response = response.answers[0].replace(/=-/g, '')
+
+                responseArea.innerText = response
+
+                var speechVoice = new SpeechSynthesisUtterance();
+                var voices = speechSynthesis.getVoices();
+                speechVoice.voice = voices[2];
+                speechVoice.text = response
+                speechVoice.lang = 'en-GB';
+                speechSynthesis.speak(speechVoice);
             }};
 
         const data = `{
@@ -45,38 +56,32 @@ async function askQuestion(e){
 class Banner extends React.Component {
     constructor(props) {
         super(props);
+        this.cursor_ref = React.createRef()
+        this.cursor = <span ref={this.cursor_ref}>_</span>;
+        this.display = true;
     }
 
+    state_change(){
+        setInterval(()=>{
+            if(this.display){
+                this.cursor_ref.current.style.opacity = 0;
+                this.display = false;
+            }else{
+                this.cursor_ref.current.style.opacity = 1;
+                this.display = true;
+            }
+        }, 500)
+    }
 
-
-    reportQuestion(e){
-
-        if(e.key === 'Enter'){
-            let question = e.target.value;
-
-            // fetch("https://api.openai.com/v1/answers", {
-            //     body: "{ \"documents\": [\"Puppy A is happy.\", \"Puppy B is sad.\"], \"question\": \""+question+"\",\"search_model\": \"ada\",\"model\": \"curie\",\"examples_context\": \"In 2017, U.S. life expectancy was 78.6 years.\",\"examples\": [[\"What is human life expectancy in the United States?\",\"78 years.\"]],\"max_tokens\": 5,\"stop\": [\"n\", \"<|endoftext|>\"]}",
-            //     headers: {
-            //         Authorization: "Bearer ***REMOVED***",
-            //         "Content-Type": "application/json"
-            //     },
-            //     method: "POST"
-            // }).then(async(response)=>{
-            //     const thing = await response;
-            //     console.log(response)
-            // })
-
-            askQuestion(question)
-
-
-        }
+    componentDidMount() {
+        this.state_change()
     }
 
     render() {
         return(
             <div>
                 <div className={'banner'}>
-                    <h1 className={'greeting fade-in-greeting'}><b>Hello, I'm Dr. AMPS</b></h1>
+                    <h1 className={'greeting fade-in-greeting'}><b>Hello, I'm Dr. AMPS</b>{this.cursor}</h1>
                     <form onSubmit={(e)=>{e.preventDefault()}}>
                         <label>
                             <p className={'input fade-in-subtext'}>
