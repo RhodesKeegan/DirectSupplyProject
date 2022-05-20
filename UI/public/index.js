@@ -8,7 +8,7 @@ async function askQuestion(e) {
     const question = e.target.value;
     const xhr = new XMLHttpRequest();
     xhr.open("POST", url);
-    xhr.setRequestHeader("Authorization", "Bearer ***REMOVED***");
+    xhr.setRequestHeader("Authorization", "Bearer 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");
     xhr.setRequestHeader("Content-Type", "application/json");
 
     xhr.onreadystatechange = function () {

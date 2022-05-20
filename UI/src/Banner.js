@@ -17,7 +17,7 @@ async function askQuestion(e){
         const xhr = new XMLHttpRequest();
         xhr.open("POST", url);
 
-        xhr.setRequestHeader("Authorization", "Bearer ***REMOVED***");
+        xhr.setRequestHeader("Authorization", "Bearer INSERT-TOKEN-HERE");
         xhr.setRequestHeader("Content-Type", "application/json");
 
         xhr.onreadystatechange = function () {
